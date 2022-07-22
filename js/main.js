@@ -13,3 +13,8 @@ solution('Hello')
 function makeUpperCase(str) {
     return str.toUpperCase()
   }
+
+  // Sum Numbers
+function sum (numbers) {
+    return numbers.reduce((sum, current) => sum + current, 0)
+};
