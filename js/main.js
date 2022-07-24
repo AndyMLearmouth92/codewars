@@ -18,3 +18,7 @@ function makeUpperCase(str) {
 function sum (numbers) {
     return numbers.reduce((sum, current) => sum + current, 0)
 };
+
+function opposite(number) {
+    return -number
+  }
