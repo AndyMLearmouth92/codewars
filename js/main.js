@@ -28,3 +28,11 @@ function opposite(number) {
   function digitize(n) {
     return n.toString().split('').reverse().map((x)=> Number(x))
   }
+
+  //Given an array of integers your solution should find the smallest integer. 
+
+  class SmallestIntegerFinder {
+      findSmallestInt(args) {
+     const min = args.reduce((a, b) => Math.min(a, b))
+    }
+  }
