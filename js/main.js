@@ -36,3 +36,30 @@ function opposite(number) {
      const min = args.reduce((a, b) => Math.min(a, b))
     }
   }
+
+  //Write a program that creates the following array, then calculates and shows the array's maximum value.
+
+  const values = [3, 11, 7, 2, 9, 10];
+
+  let max = values[0];
+  
+  for (let i = 1; i < values.length; i++) {
+  if (values[i] > max) {
+  max = values[i];
+  }
+  }
+  
+  console.log(max);
+
+  //Find the smallest Integer
+
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+     let min = args.reduce((a, b) => Math.min(a, b))
+     console.log(min)
+    }
+  }
+    
+    SmallestIntegerFinder([34, -345, -1, 100])
+
+ 
