@@ -62,4 +62,28 @@ function opposite(number) {
     
     SmallestIntegerFinder([34, -345, -1, 100])
 
+    //Create a function that has a loop that prints '21' 21 times to the console and then call that function.
+
+    for(let i = 0; i < 21; i++){
+        console.log(21)
+    }
  
+
+//Complete the method that takes a boolean value and return a "Yes"string for true, or a "No" string for false.
+
+function boolToWord(bool){
+  if(bool === true){
+      return 'Yes'
+}else if(bool === false){
+    return 'No'
+}
+}
+//OR
+
+const boolToWord = bool => bool ? 'Yes' : 'No'
+
+//Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+function descendingOrder(n){
+  return Number(n.toString().split('').sort((a, b)=> b - a).join(''))
+}
