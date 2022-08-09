@@ -103,3 +103,9 @@ function abbrevName(name){
   var nameArray = name.split(" ");
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
+
+//Given an array of integers, return a new array with each value doubled.
+
+function maps(x){
+  return x.map(x => x * 2);
+}
