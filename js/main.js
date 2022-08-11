@@ -109,3 +109,9 @@ function abbrevName(name){
 function maps(x){
   return x.map(x => x * 2);
 }
+
+//You need to double the integer and return it.
+
+function doubleInteger(i) {
+  return i*2
+}
