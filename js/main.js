@@ -159,3 +159,8 @@ function isDivisible(n, x, y) {
   function paperwork(n, m) {
     return (n >= 0 && m >= 0)? n*m : 0
   }
+
+  //Arrow function and ternary operator
+
+  const paperwork = (n, m) => (n >= 0 && m >= 0)? n*m : 0
+  
