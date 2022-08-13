@@ -153,3 +153,9 @@ function isDivisible(n, x, y) {
       return 0
     }
   }
+
+  //Ternary operator
+
+  function paperwork(n, m) {
+    return (n >= 0 && m >= 0)? n*m : 0
+  }
