@@ -164,3 +164,13 @@ function isDivisible(n, x, y) {
 
   const paperwork = (n, m) => (n >= 0 && m >= 0)? n*m : 0
   
+
+  //Pre fizzbuzz
+
+  function preFizz(n) {
+    let newArray = []
+    for(let i = 1; i <= n; i++){
+      newArray.push(i)
+    }
+    return newArray
+  }
