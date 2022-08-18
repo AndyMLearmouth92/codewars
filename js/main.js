@@ -212,3 +212,12 @@ function isDivisible(n, x, y) {
 function getCount(str) {
   return (str.match(/[aeiou]/gi)||[]).length
 }
+
+//The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
+
+function removeSmallest(arr) {
+  const smallest = Math.min(...arr);
+  const index = arr.indexOf(smallest);
+  
+  return arr.filter((_, i) => i !== index);
+}
