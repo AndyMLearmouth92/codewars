@@ -206,3 +206,9 @@ function isDivisible(n, x, y) {
 
   return vowelsCount;
 }
+
+//OR
+
+function getCount(str) {
+  return (str.match(/[aeiou]/gi)||[]).length
+}
