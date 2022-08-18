@@ -174,3 +174,7 @@ function isDivisible(n, x, y) {
     }
     return newArray
   }
+
+  //Given a list of integers, determine whether the sum of its elements is odd or even.
+
+  const oddOrEven = array => array.reduce((sum, current) => sum + current, 0) % 2 == 0 ? "even" : "odd"
