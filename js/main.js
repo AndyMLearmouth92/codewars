@@ -221,3 +221,32 @@ function removeSmallest(arr) {
   
   return arr.filter((_, i) => i !== index);
 }
+
+// Given an array of integers your solution should find the smallest integer. 
+// For example:
+// Given [34, 15, 88, 2] your solution will return 2
+// Given [34, -345, -1, 100] your solution will return -345
+// You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+function smallestIntegerFinder(arr){
+  let sorted = arr.sort((a, b) => a-b)
+  console.log(sorted[0])
+  }
+
+  
+  // Write a function which calculates the average of the numbers in a given list.
+
+  // Note: Empty arrays should return 0.
+
+  function find_average(array) {
+    let sum = 0
+    let average = 0
+    for(let i = 0; i < array.length; i++){
+      sum = sum + array[i]
+      if(array === 0 || array.length == 0){
+        return 0
+    }
+      average = sum / array.length
+      }
+    return average;
+  }
