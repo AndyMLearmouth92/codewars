@@ -287,3 +287,63 @@ function lovefunc(flower1, flower2){
 function lovefunc(flower1, flower2){
   return (flower1 + flower2) %2 !== 0 ? true : false
 }
+
+//Arrays
+//Your pokemon party order which is a list of pokemon has been leaked to Misty. Please create a function that reverses your list and prints it to the console. 
+
+function reverseArray(arr){
+  let reversedList = arr.reverse()
+  console.log(reversedList)
+}
+
+reverseArray(['bulb', 'char', 'squirt'])
+
+//OR
+
+function reverseArray(arr){
+  console.log(arr.reverse())
+}
+
+reverseArray(['bulb', 'char', 'squirt'])
+
+//Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+
+function squaredCubed(arr1, arr2){
+  let squaring = arr1.map(x => x * x)
+  let squared = squaring.reduce((sum, current) => sum + current, 0)
+  let cubing = arr2.map(x => x * x * x)
+  let cubed = cubing.reduce((sum, current) => sum + current, 0)
+  if(squared > cubed){
+      console.log(true)
+  }else if(cubed > squared){
+      console.log(false)
+  }else{
+      console.log('Same')
+}
+}
+
+squaredCubed([2,4,6],[2,4,6])
+
+function squaredCubed(a,b){
+return a.reduce((acc, c) => acc + c**2, 0) > b.reduce((acc, c) => acc + c**3, 0)
+}
+
+squaredCubed([2,2,2],[2,2,2])
+
+//Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+// Some cases:
+// [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+// [68, -1, 1, -7, 10, 10] => [-1, 10]
+
+function multipleOfIndex(arr){
+  console.log(arr.filter((x,i) => x % i===0))
+}
+
+
+
+
+//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+
+function stringsAndNums(arr){
+  return arr.reduce((sum, current) => Number(sum) + Number(current), 0)
+}
