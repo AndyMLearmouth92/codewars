@@ -518,3 +518,13 @@ function sumMix(x){
   })
     return sum
   }
+
+  //OR forOf loop
+
+  function sumMix(x){
+    let sum = 0
+    for(item of x){
+      sum += Number(item)
+    }
+      return sum
+    }
