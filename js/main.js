@@ -528,3 +528,12 @@ function sumMix(x){
     }
       return sum
     }
+
+    //OR map and reduce
+
+    function sumMix(x){
+      let nums = x.map(i => {
+      return Number(i);
+    });
+     return nums.reduce((sum, current) => sum + current, 0)
+    }
