@@ -549,3 +549,15 @@ function sumMix(x){
 function getEvenNumbers(numbersArray){
   return numbersArray.filter(number => number %2 == 0)
 }
+
+//OR forLoop
+
+function getEvenNumbers(numbersArray){
+  let evenNums = []
+  for(let i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] %2 === 0){
+      evenNums.push(numbersArray[i])
+    }
+  }
+  return evenNums
+}
