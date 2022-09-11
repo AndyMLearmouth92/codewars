@@ -595,3 +595,9 @@ function lovefunc(flower1, flower2){
     return false
   }
 }
+
+//OR
+
+function lovefunc(flower1, flower2){
+  return (flower1 + flower2) %2 !== 0 ? true : false
+}
