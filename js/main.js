@@ -596,8 +596,15 @@ function getAverage(marks){
   return Math.floor((marks.reduce((sum, current) => sum + current, 0)) / marks.length)
 }
 
+//OR forEach
 
-
+function getAverage(marks){
+  let total = 0
+  marks.forEach(item => {
+    total += item
+  })
+  return Math.floor(total / marks.length)
+}
 
 
 
