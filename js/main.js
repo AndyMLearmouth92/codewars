@@ -508,3 +508,13 @@ function sumMix(x){
 }
   return sum
 }
+
+//OR foreach
+
+function sumMix(x){
+  let sum = 0
+  x.forEach(item => {
+    sum += Number(item)
+  })
+    return sum
+  }
