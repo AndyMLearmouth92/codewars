@@ -561,3 +561,15 @@ function getEvenNumbers(numbersArray){
   }
   return evenNums
 }
+
+//OR forEach
+
+function getEvenNumbers(numbersArray){
+  let evenNums = []
+  numbersArray.forEach(num => {
+    if(num %2 === 0){
+      evenNums.push(num)
+    }
+  })
+  return evenNums
+}
