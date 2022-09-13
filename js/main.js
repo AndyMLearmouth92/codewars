@@ -693,3 +693,13 @@ sortme = function( names ){
 function toNumberArray(stringarray){
   return stringarray.map(Number)
 }
+
+//foreach
+
+function toNumberArray(stringarray){
+  let newArr = []
+  stringarray.forEach(e => {
+    newArr.push(+e)
+  })
+  return newArr
+}
