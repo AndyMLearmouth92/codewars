@@ -703,3 +703,9 @@ function toNumberArray(stringarray){
   })
   return newArr
 }
+
+// map to parseFloat
+
+function toNumberArray(stringarray){
+  return stringarray.map(parseFloat)
+}
