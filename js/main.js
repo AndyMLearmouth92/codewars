@@ -715,3 +715,9 @@ function toNumberArray(stringarray){
 function double(array) {
   return array.map((e) => e*2)
 }
+
+//Define a function that removes duplicates from an array of numbers and returns it as a result. The order of the sequence has to stay the same.
+
+function distinct(a) {
+  return a.filter((item, index)=> a.indexOf(item) === index)
+}
