@@ -1,0 +1,31 @@
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+
+Solution 1:
+
+function fakeBin(x){
+// turn to an array
+  let newArr = x.split('')
+  // new array to hold the solution once it goes through the loop and conditional
+  let solution = []
+  // Loop through array
+  for(let i = 0; i < newArr.length; i++){
+  // Check whether below 5
+    if(newArr[i] < 5){
+      solution.push('0')
+    }else{
+      solution.push('1')
+    }
+  }
+  return solution.join('')
+}
+
+
+Solution 2:
+
+// turn to array, interate through with a map and a ternary to decide if below 5.
+
+function fakeBin(x){
+return x.split('').map(x => x < 5 ? 0 : 1).join('')
+}
