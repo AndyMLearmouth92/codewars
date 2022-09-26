@@ -18,3 +18,9 @@ function removeUrlAnchor(url){
 function removeUrlAnchor(url){
     return url.replace(/#.+$/,'')
   }
+
+//   Solution 2:
+
+function removeUrlAnchor(url){
+    return url.split('#')[0]
+  }
