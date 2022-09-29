@@ -24,3 +24,18 @@ function removeUrlAnchor(url){
 function removeUrlAnchor(url){
     return url.split('#')[0]
   }
+
+
+//   Solution 3:
+
+  function removeUrlAnchor(url){
+    let result = ''
+     for(let i = 0; i < url.length; i++){
+       if(url[i] === '#'){
+         break
+       }else{
+         result += url[i]
+       }
+     }
+     return result
+   }
