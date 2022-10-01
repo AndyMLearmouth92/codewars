@@ -33,3 +33,8 @@ function checkAlive (health) {
   return health > 0 ? true : false
 }
 
+Solution 3:
+
+function checkAlive (health) {
+  return health > 0
+}
