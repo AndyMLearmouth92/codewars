@@ -26,3 +26,10 @@ function checkAlive (health) {
     return false
   }
 }
+
+Solution 2:
+
+function checkAlive (health) {
+  return health > 0 ? true : false
+}
+
