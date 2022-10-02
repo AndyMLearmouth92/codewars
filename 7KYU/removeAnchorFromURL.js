@@ -39,3 +39,19 @@ function removeUrlAnchor(url){
      }
      return result
    }
+
+
+//    Solution 4:
+
+function removeUrlAnchor(url){
+    let result = []
+    let splitURL = url.split('')
+    for(let i = 0; i < splitURL.length; i++){
+      if(splitURL[i] === '#'){
+        break
+      }else{
+        result.push(splitURL[i])
+      }
+    }
+    return result.join('')
+  }
