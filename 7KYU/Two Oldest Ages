@@ -20,3 +20,9 @@ let sorted = ages.sort((a,b)=> b-a)
 // pull out second highest and highest elements
 return [sorted[1], sorted[0]]
 }
+
+Solution 2:
+
+function twoOldestAges(ages){
+ return ages.sort((a,b)=> a-b).slice(-2)
+}
