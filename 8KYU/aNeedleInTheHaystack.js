@@ -1,4 +1,4 @@
-Can you find the needle in the haystack?
+/* Can you find the needle in the haystack?
 
 Write a function findNeedle() that takes an array full of junk but containing one "needle"
 
@@ -10,7 +10,9 @@ Example(Input --> Output)
 
 ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
 
-Solution 1:
+*/
+
+// Solution 1:
 
 function findNeedle(haystack) {
   let needle = haystack.indexOf('needle')
@@ -18,7 +20,7 @@ function findNeedle(haystack) {
 }
 
 
-Solution 2:
+// Solution 2:
 
 function findNeedle(haystack) {
   return "found the needle at position "+ haystack.indexOf('needle')
