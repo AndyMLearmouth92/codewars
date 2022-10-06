@@ -22,3 +22,8 @@ var filterString = function(value) {
   return Number(value.replace(/\D/g, ''))
 }
 
+Solution 2:
+
+var filterString = function(value) {
+   return Number(value.split('').filter(e => !isNaN(e)).join(''))
+}
