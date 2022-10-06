@@ -27,3 +27,9 @@ Solution 2:
 var filterString = function(value) {
    return Number(value.split('').filter(e => !isNaN(e)).join(''))
 }
+
+Solution 3:
+
+var filterString = function(value) {
+   return +value.split('').filter(e => !isNaN(e)).join('')
+}
