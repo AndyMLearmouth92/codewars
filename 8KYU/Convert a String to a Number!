@@ -23,3 +23,10 @@ Solution 1:
 const stringToNumber = function(str){
   return parseInt(str);
 }
+
+
+Solution 2:
+
+const stringToNumber = function(str){
+  return Number(str);
+}
