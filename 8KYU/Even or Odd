@@ -21,3 +21,9 @@ Solution 2:
 function even_or_odd(number) {
   return Math.abs(number) % 2 === 1 ? "Odd" : "Even";
 }
+
+Solution 3:
+
+function even_or_odd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd'
+}
