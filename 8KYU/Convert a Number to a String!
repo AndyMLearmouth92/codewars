@@ -19,3 +19,9 @@ Solution 1:
 function numberToString(num) {
   return String(num)
 }
+
+Solution 2:
+
+function numberToString(num) {
+ return num.toString()
+}
