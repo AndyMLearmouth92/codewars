@@ -36,3 +36,32 @@ function likes(names) {
     return `${listOfNames[0]}, ${listOfNames[1]} and ${listOfNames.length-2} others like this`
   }
 }
+
+
+Solution 2: forEach
+
+function likes(names) {
+  //Empty array to store names
+  let listOfNames = []
+  //forEach to put items onto listOfNames array
+  names.forEach(function(e){
+    listOfNames.push(e);
+  })
+  //Conditionals to check the length of array
+  if(listOfNames.length <= 0){
+    return 'no one likes this'
+  }else if(listOfNames.length === 1){
+    return `${listOfNames[0]} likes this`
+  }else if(listOfNames.length === 2){
+    return `${listOfNames[0]} and ${listOfNames[1]} like this`
+  }else if(listOfNames.length === 3){
+    return `${listOfNames[0]}, ${listOfNames[1]} and ${listOfNames[2]} like this`
+  }else{
+    return `${listOfNames[0]}, ${listOfNames[1]} and ${listOfNames.length-2} others like this`
+  }
+}
+
+
+Solution 3: if statements
+
+
