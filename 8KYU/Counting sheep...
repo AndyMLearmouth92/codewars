@@ -29,3 +29,11 @@ function countSheeps(arrayOfSheep) {
   }
   return numOfSheep
 }
+
+
+Solution 2: Filter
+
+function countSheeps(arrayOfSheep) {
+  let numOfSheep = arrayOfSheep.filter(e => e === true)
+  return numOfSheep.length
+}
