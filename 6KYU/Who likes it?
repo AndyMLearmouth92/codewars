@@ -64,4 +64,17 @@ function likes(names) {
 
 Solution 3: if statements
 
-
+function likes(names) {
+  //Empty array to store names
+  let listOfNames = []
+  //Loop to interate through the names array
+  for(let i = 0; i<names.length; i++){
+    listOfNames.push(names[i])
+  //Conditionals to check the length of array
+  }if(listOfNames.length <= 0) return 'no one likes this'
+  if(listOfNames.length === 1) return `${listOfNames[0]} likes this`
+  if(listOfNames.length === 2) return `${listOfNames[0]} and ${listOfNames[1]} like this`
+  if(listOfNames.length === 3) return `${listOfNames[0]}, ${listOfNames[1]} and ${listOfNames[2]} like this`
+  else{ return `${listOfNames[0]}, ${listOfNames[1]} and ${listOfNames.length-2} others like this`
+  }
+}
