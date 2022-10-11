@@ -17,4 +17,6 @@ function greet(str){
   return 'hello world!'
   }
   
+  Solution 2:
   
+  const greet = () => 'hello world!'
