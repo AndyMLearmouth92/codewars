@@ -37,3 +37,18 @@ function countSheeps(arrayOfSheep) {
   let numOfSheep = arrayOfSheep.filter(e => e === true)
   return numOfSheep.length
 }
+
+
+Solution 3: forEach
+
+function countSheeps(arrayOfSheep) {
+  let numOfSheep = 0
+  arrayOfSheep.forEach(e => {
+   if(e === true){
+     numOfSheep += 1
+   }
+  })
+  return numOfSheep
+}
+
+
