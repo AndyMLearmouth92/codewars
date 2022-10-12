@@ -14,7 +14,17 @@ function XO(str) {
     //code here
 }
 
+
 Solution 1:
+
+function XO(str) {
+ //Make string lower case and then turn into an array
+ let newArr = str.toLowerCase().split('')
+ //Filter to count x and o and compare them to see if they are equal
+ return newArr.filter(x => x === 'o').length === newArr.filter(x => x === 'x').length
+}
+
+Solution 2:
 
 function XO(str) {
   //Turn the string to an array
