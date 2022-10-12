@@ -24,7 +24,19 @@ function XO(str) {
  return newArr.filter(x => x === 'o').length === newArr.filter(x => x === 'x').length
 }
 
+
+
 Solution 2:
+
+function XO(str) {
+//Regex to match x and o
+  let x = str.match(/x/gi)
+  let o = str.match(/o/gi)
+  return (x && x.length) === (o && o.length)
+}
+
+
+Solution 3:
 
 function XO(str) {
   //Turn the string to an array
