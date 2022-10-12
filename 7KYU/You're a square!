@@ -68,3 +68,9 @@ const isSquare = n => Math.sqrt(n) %1 === 0
 Solution 6:
 
 const isSquare = n => Number.isInteger(Math.sqrt(n))
+
+Solution 7:
+
+var isSquare = function(n){
+  return Number.isInteger(Math.sqrt(n))
+}
