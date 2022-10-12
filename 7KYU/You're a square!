@@ -36,3 +36,17 @@ var isSquare = function(n){
     return false
   }
 }
+
+Solution 2:
+
+var isSquare = function(n){
+  //find the squareroot of the number and check whether it is a whole number
+  if(Math.sqrt(n) %1 === 0) return true
+  else{
+    return false
+  }
+}
+
+
+
+
