@@ -35,3 +35,5 @@ function warnTheSheep(queue) {
     }
     }
     }
+
+// Solution 2
