@@ -13,3 +13,9 @@ Solution 1:
 function squareSum(numbers){
   return numbers.map(x => x*x).reduce((sum, current) => sum + current,0)
 }
+
+Solution 2:
+
+function squareSum(numbers){
+return numbers.reduce((sum, current) => sum + (current * current), 0)
+}
