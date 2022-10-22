@@ -39,3 +39,24 @@ Solution 2:
 function basicOp(operation, value1, value2) {
   return operation === '+' ? value1 + value2 : operation === '-' ? value1 - value2 : operation === '*' ? value1 * value2 : operation === '/' ? value1 / value2 : false
 }
+
+Solution 3:
+
+function basicOp(operation, value1, value2){
+  switch(operation){
+      case '+':
+        return value1 + value2;
+        break;
+      case '-':
+        return value1 - value2;
+        break;
+      case '*':
+        return value1 * value2;
+        break;
+      case '/':
+        return value1 / value2;
+        break;
+      default:
+      return 0;
+  }
+}
