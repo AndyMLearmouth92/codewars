@@ -29,3 +29,9 @@ function howManyGifts(maxBudget, gifts){
    }
    return i-1
 }
+
+Solution 2:
+
+function howManyGifts(maxBudget, gifts){
+return gifts.sort((a,b)=>a-b).filter(x => (maxBudget -= x) >= 0).length
+}
