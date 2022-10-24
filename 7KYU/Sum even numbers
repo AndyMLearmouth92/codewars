@@ -24,3 +24,12 @@ function sumEvenNumbers(input) {
 Solution 2:
 
 const sumEvenNumbers = input => input.filter(x => x % 2 == 0).reduce((sum, current) => sum + current, 0)
+
+
+Solution 3:
+
+function sumEvenNumbers(input) {
+  let newArr = []
+  input.forEach(x => x % 2 === 0 ? newArr.push(x) : false)
+  return newArr.reduce((sum, current) => sum + current, 0)
+}
