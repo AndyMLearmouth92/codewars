@@ -24,3 +24,17 @@ function solution(str, ending){
 Solution 2:
 
 const solution = (str, ending) => str.endsWith(ending)
+
+Solution 3:
+
+function solution(str, ending){
+ let string = str.split('')
+ // Length is used for the slice as ending can be different lengths
+ let length = string.length - ending.length
+ // Check if the slice is the same as the ending
+ if(string.slice(length).join('') === ending){
+   return true
+ }else{
+   return false
+ }
+}
