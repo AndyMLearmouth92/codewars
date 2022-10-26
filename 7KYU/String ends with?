@@ -20,3 +20,7 @@ function solution(str, ending){
     return false
   }
 }
+
+Solution 2:
+
+const solution = (str, ending) => str.endsWith(ending)
