@@ -36,3 +36,14 @@ function openOrSenior(data){
   }
   return typeOfMember
 }
+
+
+Solution 2:
+
+function openOrSenior(data){
+  let typeOfMember = []
+  for(let i = 0; i < data.length; i++){
+    data[i][0] >= 55 && data[i][1] > 7 ? typeOfMember.push('Senior') : typeOfMember.push('Open')
+  }
+  return typeOfMember
+}
