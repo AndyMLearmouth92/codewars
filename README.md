@@ -1,12 +1,12 @@
-# A repository filled with codewars challenges (kata). Currently ranked in the 33rd honour percentile on the global leaderboard and have completed over 100 challenges and push at least 5 solutions every week.
+# Codewars
 
 <img width="1022" alt="image" src="https://user-images.githubusercontent.com/108182837/198887985-ad8389df-b3a8-48a7-8727-fcbf32aba6f9.png">
+
+A repository filled with Codewars challenges (kata). Currently ranked in the 33rd honour percentile on the global leaderboard and have completed over 100 challenges and push at least 5 solutions every week.
 
 # How It's Made:
 
 Tech used: JavaScript
-
-Everyday, the first thing I do is solve a Codewar!
 
 # Optimisations
 
