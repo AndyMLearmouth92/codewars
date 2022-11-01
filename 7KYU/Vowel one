@@ -27,3 +27,20 @@ Solution 2:
 function vowelOne(s){
   return s.split('').map(x => ('aeiouAEIOU'.includes(x)) ? 1 : 0).join('');
 }
+
+Solution 3:
+
+function vowelOne(s){
+let splitString = s.toLowerCase().split('')
+let result = []
+//Loop through the array
+for(let i = 0; i < splitString.length; i++){
+  //Check for vowels
+  if(splitString[i] === 'a' || splitString[i] === 'e' || splitString[i] === 'i' || splitString[i] === 'o' || splitString[i] === 'u'){
+   result.push(1)
+  }else{
+   result.push(0)
+  }
+ }
+ return result.join('')
+}
