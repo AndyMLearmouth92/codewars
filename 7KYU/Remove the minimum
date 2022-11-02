@@ -30,3 +30,13 @@ function removeSmallest(arr) {
   
   return arr.filter((_, i) => i !== index);
 }
+
+Solution 2:
+
+function removeSmallest(numbers) {
+  let arr = numbers.slice(0)
+  let minimum = Math.min(...numbers)
+  let index = numbers.indexOf(minimum)
+  arr.splice(index, 1)
+  return arr
+}
