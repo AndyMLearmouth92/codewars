@@ -1,4 +1,4 @@
-A square of squares
+/*A square of squares
 
 You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
 
@@ -26,8 +26,9 @@ Starter Code:
 var isSquare = function(n){
   return false; // fix me
 }
+*/
 
-Solution 1:
+// Solution 1:
 
 var isSquare = function(n){
   //find the squareroot of the number and check whether it is a whole number
@@ -37,7 +38,7 @@ var isSquare = function(n){
   }
 }
 
-Solution 2:
+// Solution 2:
 
 var isSquare = function(n){
   //find the squareroot of the number and check whether it is a whole number
@@ -47,29 +48,29 @@ var isSquare = function(n){
   }
 }
 
-Solution 3:
+// Solution 3:
 
 var isSquare = function(n){
   //find the squareroot of the number and check whether it is a whole number
   return Math.sqrt(n) %1 === 0 ? true : false
   }
 
-Solution 4:
+// Solution 4:
 
 var isSquare = function(n){
   return Math.sqrt(n) %1 === 0
   }
 
-Solution 5:
+// Solution 5:
 
 const isSquare = n => Math.sqrt(n) %1 === 0
 
 
-Solution 6:
+// Solution 6:
 
 const isSquare = n => Number.isInteger(Math.sqrt(n))
 
-Solution 7:
+// Solution 7:
 
 var isSquare = function(n){
   return Number.isInteger(Math.sqrt(n))
