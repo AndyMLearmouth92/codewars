@@ -22,3 +22,7 @@ Solution 2:
 function isPalindrome(x) {
   return x.split('').reverse().join('').toLowerCase('') === x.toLowerCase() ? true : false
 }
+
+Solution 3:
+
+const isPalindrome = x => x.split('').reverse().join('').toLowerCase() === x.toLowerCase() ? true : false
