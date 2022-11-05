@@ -32,3 +32,13 @@ const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
 function fixTheMeerkat(arr) {
  return [arr[2], arr[1], arr[0]]
 }
+
+// Solution 5:
+
+function fixTheMeerkat(arr) {
+ let headBodyTail = []
+ for(let i = 0; i < arr.length; i++){
+   headBodyTail.unshift(arr[i])
+ }
+  return headBodyTail
+}
