@@ -18,3 +18,7 @@ function fixTheMeerkat(arr) {
 function fixTheMeerkat(arr) {
  return arr.reverse()
 }
+
+// Solution 2:
+
+const fixTheMeerkat = arr => arr.reverse() 
