@@ -1,4 +1,4 @@
-Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+/* Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
 
 Write a function which takes a list of strings and returns each line prepended by the correct number.
 
@@ -8,8 +8,9 @@ Examples: (Input --> Output)
 
 [] --> []
 ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+*/
 
-Solution 1:
+// Solution 1:
 
 var number=function(array){
   let newArr = []
@@ -20,7 +21,7 @@ var number=function(array){
 }
 
 
-Solution 2:
+// Solution 2:
 
 function number(arr) {
   return arr.map((e, i) => `${i+1}: ${e}`);
