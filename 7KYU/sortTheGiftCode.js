@@ -1,4 +1,4 @@
-Happy Holidays fellow Code Warriors!
+/* Happy Holidays fellow Code Warriors!
 
 Santa's senior gift organizer Elf developed a way to represent up to 26 gifts by assigning a unique alphabetical character to each gift. After each gift was assigned a character, the gift organizer Elf then joined the characters to form the gift ordering code.
 
@@ -13,16 +13,16 @@ Examples (Input -- => Output):
 "abcdef"                      -- => "abcdef"
 "pqksuvy"                     -- => "kpqsuvy"
 "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
+*/
 
-
-Code:
+// Code:
 
 function sortGiftCode(code){
   let newArr = code.split('')
   return newArr.sort().join('')
 }
 
-Refactored
+// Refactored:
 
 function sortGiftCode(code){
   return code.split('').sort().join('') 
