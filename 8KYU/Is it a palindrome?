@@ -16,3 +16,9 @@ function isPalindrome(x) {
     return false
   }
 }
+
+Solution 2:
+
+function isPalindrome(x) {
+  return x.split('').reverse().join('').toLowerCase('') === x.toLowerCase() ? true : false
+}
