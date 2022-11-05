@@ -1,4 +1,4 @@
-Given an integer n return "odd" if the number of its divisors is odd. Otherwise return "even".
+/* Given an integer n return "odd" if the number of its divisors is odd. Otherwise return "even".
 
 Note: big inputs will be tested.
 
@@ -16,7 +16,9 @@ function oddity(n) {
   return
 }
 
+
 Solution 1:
+*/
 
 function oddity(n) {
   return Math.sqrt(n) %1 ? 'even' : 'odd'
