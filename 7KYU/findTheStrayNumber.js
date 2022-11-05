@@ -1,4 +1,4 @@
-You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+/* You are given an odd-length array of integers, in which all of them are the same, except for one single number.
 
 Complete the method which accepts such an array, and returns that single different number.
 
@@ -12,9 +12,9 @@ Examples
 function stray(numbers) {
   return 0;
 }
+*/
 
-
-Solution 1:
+// Solution 1:
 
 function stray(numbers) {
     let strayCharacter = numbers[0];
@@ -32,7 +32,7 @@ function stray(numbers) {
  }
  
  
- Solution 2:
+//  Solution 2:
  
  function stray(numbers) {
   //Find highest and lowest in array
