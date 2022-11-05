@@ -1,4 +1,4 @@
-vowelOne
+/* vowelOne
 
 Write a function that takes a string and outputs a strings of 1's and 0's where vowels become 1's and non-vowels become 0's.
 
@@ -15,20 +15,21 @@ Starter code:
 function vowelOne(s){
   // ...
 }
+*/
 
-Solution 1:
+// Solution 1:
 
 function vowelOne(s){
   return s.replace(/[^aeiou]/gi, '0').replace(/[^\d]/g, '1');
 }
 
-Solution 2:
+// Solution 2:
 
 function vowelOne(s){
   return s.split('').map(x => ('aeiouAEIOU'.includes(x)) ? 1 : 0).join('');
 }
 
-Solution 3:
+// Solution 3:
 
 function vowelOne(s){
 let splitString = s.toLowerCase().split('')
