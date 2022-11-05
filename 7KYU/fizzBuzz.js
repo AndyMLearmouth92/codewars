@@ -1,4 +1,4 @@
-Return an array containing the numbers from 1 to N, where N is the parametered value.
+/* Return an array containing the numbers from 1 to N, where N is the parametered value.
 
 Replace certain values however if any of the following conditions are met:
 
@@ -11,7 +11,9 @@ Method calling example:
 
 fizzbuzz(3) -->  [1, 2, "Fizz"]
 
-Solution:
+*/
+
+// Solution:
 
 // Return an array
 function fizzbuzz(n)
