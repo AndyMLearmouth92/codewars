@@ -1,4 +1,4 @@
-The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
+/* The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
 
 To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
 
@@ -21,7 +21,9 @@ function openOrSenior(data){
   // ...
 }
 
-Solution 1:
+*/
+
+// Solution 1:
 
 function openOrSenior(data){
   let typeOfMember = []
@@ -38,7 +40,7 @@ function openOrSenior(data){
 }
 
 
-Solution 2:
+// Solution 2:
 
 function openOrSenior(data){
   let typeOfMember = []
@@ -48,7 +50,7 @@ function openOrSenior(data){
   return typeOfMember
 }
 
-Solution 3:
+// Solution 3:
 
 function openOrSenior(data){
   return data.map(([age, handicap]) => (age >= 55  && handicap > 7) ? 'Senior' : 'Open');
