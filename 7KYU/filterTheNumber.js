@@ -1,4 +1,4 @@
-Filter the number
+/* Filter the number
 
 Oh, no! The number has been mixed up with the text. Your goal is to retrieve the number from the text, can you return the number back to its original state?
 
@@ -16,19 +16,21 @@ var filterString = function(value) {
   //Complete this function :)
 }
 
-Solution 1:
+*/
+
+// Solution 1:
 
 var filterString = function(value) {
   return Number(value.replace(/\D/g, ''))
 }
 
-Solution 2:
+// Solution 2:
 
 var filterString = function(value) {
    return Number(value.split('').filter(e => !isNaN(e)).join(''))
 }
 
-Solution 3:
+// Solution 3:
 
 var filterString = function(value) {
    return +value.split('').filter(e => !isNaN(e)).join('')
