@@ -1,4 +1,4 @@
-Count the number of divisors of a positive integer n.
+/* Count the number of divisors of a positive integer n.
 
 Random tests go up to n = 500000.
 
@@ -15,7 +15,9 @@ function getDivisorsCnt(n){
     // todo
 }
 
-Solution 1:
+*/
+
+// Solution 1:
 
 function getDivisorsCnt(n){
 //Variable to count divisors
@@ -30,7 +32,7 @@ function getDivisorsCnt(n){
   return count
 }
 
-Solution 2:
+// Solution 2:
 
 function getDivisorsCnt(n){
   let count = 0
@@ -38,7 +40,7 @@ function getDivisorsCnt(n){
   return count
 }
 
-Solution 3:
+// Solution 3:
 
 function getDivisorsCnt(n){
   let count = 0
