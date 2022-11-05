@@ -1,4 +1,4 @@
-Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+/* Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
 Examples input/output:
 
@@ -14,8 +14,9 @@ function XO(str) {
     //code here
 }
 
+*/
 
-Solution 1:
+// Solution 1:
 
 function XO(str) {
  //Make string lower case and then turn into an array
@@ -25,8 +26,7 @@ function XO(str) {
 }
 
 
-
-Solution 2:
+// Solution 2:
 
 function XO(str) {
 //Regex to match x and o
@@ -35,8 +35,7 @@ function XO(str) {
   return (x && x.length) === (o && o.length)
 }
 
-
-Solution 3:
+// Solution 3:
 
 function XO(str) {
   //Turn the string to an array
