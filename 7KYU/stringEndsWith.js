@@ -1,4 +1,4 @@
-Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+/* Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
 Examples:
 
@@ -10,8 +10,9 @@ Starter code:
 function solution(str, ending){
   // TODO: complete
 }
+*/
 
-Solution 1:
+// Solution 1:
 
 function solution(str, ending){
   if(str.endsWith(ending)){
@@ -21,11 +22,11 @@ function solution(str, ending){
   }
 }
 
-Solution 2:
+// Solution 2:
 
 const solution = (str, ending) => str.endsWith(ending)
 
-Solution 3:
+// Solution 3:
 
 function solution(str, ending){
  let string = str.split('')
