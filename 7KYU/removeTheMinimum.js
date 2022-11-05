@@ -1,4 +1,4 @@
-The museum of incredible dull things
+/* The museum of incredible dull things
 
 The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
 
@@ -21,8 +21,9 @@ Starter code:
 function removeSmallest(numbers) {
   throw "TODO: removeSmallest";
 }
+*/
 
-Solution 1:
+// Solution 1:
 
 function removeSmallest(arr) {
   const smallest = Math.min(...arr);
@@ -31,7 +32,7 @@ function removeSmallest(arr) {
   return arr.filter((_, i) => i !== index);
 }
 
-Solution 2:
+// Solution 2:
 
 function removeSmallest(numbers) {
   let arr = numbers.slice(0)
