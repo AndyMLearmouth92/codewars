@@ -1,4 +1,4 @@
-Your task is to split the chocolate bar of given dimension n x m into small squares. Each square is of size 1x1 and unbreakable. Implement a function that will return minimum number of breaks needed.
+/* Your task is to split the chocolate bar of given dimension n x m into small squares. Each square is of size 1x1 and unbreakable. Implement a function that will return minimum number of breaks needed.
 
 For example if you are given a chocolate bar of size 2 x 1 you can split it to single squares in just one break, but for size 3 x 1 you must do two breaks.
 
@@ -10,7 +10,9 @@ function breakChocolate(n,m) {
   return 0;
 }
 
-Solution 1:
+*/
+
+// Solution 1:
 
 function breakChocolate(n,m) {
   if(n >= 1 && m >= 1){
@@ -20,13 +22,13 @@ function breakChocolate(n,m) {
   }
 }
 
-Solution 2:
+// Solution 2:
 
 function breakChocolate(n,m) {
   return n >= 1 && m >= 1 ? n * m - 1 : 0
 }
 
-Solution 3:
+// Solution 3:
 
 const breakChocolate = (n,m) => n >= 1 && m >= 1 ? n * m - 1 : 0
 
