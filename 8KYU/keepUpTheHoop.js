@@ -28,3 +28,8 @@ function hoopCount (n) {
 function hoopCount (n) {
    return n > 9 ? "Great, now move on to tricks" : "Keep at it until you get it"
 }
+
+// Solution 3:
+
+const hoopCount = n => n > 9 ? "Great, now move on to tricks" : "Keep at it until you get it"
+
