@@ -27,3 +27,9 @@ function swap (string) {
 
 let vowels = ['a','e', 'i', 'o', 'u']
   const swap = (string) => string.split("").map(x => vowels.includes(x) ? x.toUpperCase() : x).join('')
+
+//  Solution 3:
+  
+  function swap (string) {
+ return string.replace(/([aeiou])/g, x => x.toUpperCase());
+}
