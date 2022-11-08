@@ -32,3 +32,8 @@ function DNAStrand(dna){
 function DNAStrand(dna){
   return dna.split('').map(x => x === 'A'? 'T': x === 'T'? 'A' : x === 'C'? 'G' : x === 'G'? 'C' : false).join('')
 }
+
+
+// Solution 3:
+
+const DNAStrand = dna => dna.split('').map(x => x === 'A'? 'T': x === 'T'? 'A' : x === 'C'? 'G' : x === 'G'? 'C' : false).join('')
