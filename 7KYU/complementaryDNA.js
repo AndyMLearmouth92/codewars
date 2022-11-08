@@ -37,3 +37,25 @@ function DNAStrand(dna){
 // Solution 3:
 
 const DNAStrand = dna => dna.split('').map(x => x === 'A'? 'T': x === 'T'? 'A' : x === 'C'? 'G' : x === 'G'? 'C' : false).join('')
+
+
+// Solution 4:
+
+function DNAStrand(dna){
+  let result = []
+  let splitDNA = dna.split('')
+  splitDNA.forEach(x => {
+    if(x === 'A'){
+      result.push('T')
+    }else if(x === 'T'){
+      result.push('A')
+    }else if(x === 'C'){
+      result.push('G')
+    }else{
+      result.push('C')
+    }
+  })
+  return result.join('')
+}
+
+
