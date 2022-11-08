@@ -26,3 +26,9 @@ let pairs = {'A':'T','T':'A','C':'G','G':'C'};
 function DNAStrand(dna){
   return dna.split('').map(function(x){ return pairs[x] }).join('');
 }
+
+// Solution 2:
+
+function DNAStrand(dna){
+  return dna.split('').map(x => x === 'A'? 'T': x === 'T'? 'A' : x === 'C'? 'G' : x === 'G'? 'C' : false).join('')
+}
