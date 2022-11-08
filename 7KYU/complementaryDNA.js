@@ -58,4 +58,22 @@ function DNAStrand(dna){
   return result.join('')
 }
 
+// Solution 5:
+
+function DNAStrand(dna){
+  let result = []
+  let splitDNA = dna.split('')
+  for(let i = 0; i < splitDNA.length; i++){
+    if(splitDNA[i] === 'A'){
+      result.push('T')
+    }else if(splitDNA[i] === 'T'){
+      result.push('A')
+    }else if(splitDNA[i] === 'C'){
+      result.push('G')
+    }else{
+      result.push('C')
+    }
+  }
+  return result.join('')
+}
 
