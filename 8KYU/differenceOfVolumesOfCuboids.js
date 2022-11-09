@@ -23,3 +23,9 @@ function findDifference(a, b) {
 // Solution 2:
 
 const findDifference = (a, b) => Math.abs(a.reduce((a,b) => a*b) - (b.reduce((a,b) => a*b)))
+
+// Solution 3:
+
+function findDifference(a, b) {
+  return Math.abs((a[0]*a[1]*a[2]) - (b[0]*b[1]*b[2]))
+}
