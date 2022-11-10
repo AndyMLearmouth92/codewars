@@ -23,3 +23,12 @@ function createPhoneNumber(numbers){
   }
   return result
 }
+
+// Solution 2:
+
+function createPhoneNumber(phoneNum){
+  let firstThree = [phoneNum[0],phoneNum[1],phoneNum[2]].join('')
+  let secondThree = [phoneNum[3],phoneNum[4],phoneNum[5]].join('')
+  let finalFive = [phoneNum[6],phoneNum[7],phoneNum[8],phoneNum[9],phoneNum[10]].join('')
+  return `(${firstThree}) ${secondThree}-${finalFive}`
+}
