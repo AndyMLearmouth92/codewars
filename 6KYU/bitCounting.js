@@ -18,4 +18,6 @@ var countBits = function(n) {
 
 // Solution 2:
 
-
+var countBits = function(n) {
+  return n.toString(2).split('').reduce((sum, current) => Number(sum) + Number(current),0)
+};
