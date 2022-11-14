@@ -42,3 +42,7 @@ function toCamelCase(str){
   }
   return arr.join('');
 }
+
+// Solution 4:
+
+const toCamelCase = str => str.split = str.split(/[-_]+/).map((x,i) => i > 0 ? x.charAt(0).toUpperCase() + x.slice(1) : x).join('')
