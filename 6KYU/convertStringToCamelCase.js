@@ -19,3 +19,12 @@ function toCamelCase(str){
 let split = str.split(/[-_]+/)
 return split.map((x,i) => i > 0 ? x.charAt(0).toUpperCase() + x.slice(1) : x).join('')
 }
+
+// Solution 2:
+
+function toCamelCase(str){
+      var regExp=/[-_]\w/ig;
+      return str.replace(regExp,function(match){
+            return match.charAt(1).toUpperCase();
+       });
+}
