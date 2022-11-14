@@ -28,3 +28,17 @@ function toCamelCase(str){
             return match.charAt(1).toUpperCase();
        });
 }
+
+// Solution 3:
+
+function toCamelCase(str){ 
+  let arr = str.split('');
+  for(i = 0; i < arr.length; i++){
+    let letter = arr[i];
+    if(letter == '_' || letter == '-') {
+      arr[i + 1] = arr[i + 1].toUpperCase();
+      arr[i] = '';
+    } 
+  }
+  return arr.join('');
+}
