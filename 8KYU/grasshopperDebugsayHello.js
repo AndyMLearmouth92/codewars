@@ -19,3 +19,8 @@ function sayHello(name) {
 function sayHello(name) {
   return `Hello, ${name}`
 }
+
+// Solution 2:
+
+const sayHello = name => `Hello, ${name}` 
+
