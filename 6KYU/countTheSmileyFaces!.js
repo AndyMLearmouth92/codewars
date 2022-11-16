@@ -44,3 +44,21 @@ for(let i = 0; i < arr.length; i++){
   return numberOfSmileyFaces
 }
 
+// Solution 2:
+
+function countSmileys(arr) {
+//Count number of smiley faces
+let numOfSmileys = 0
+//Iterate through the elements of the array
+for(let i = 0; i < arr.length; i++){
+//If elements make a smiley face add one to the count.
+  if(arr[i][0] === ':' || arr[i][0] === ';' ){
+      if((arr[i][1] === '-' || arr[i][1] === '~') && (arr[i][2] === ')' || arr[i][2] === 'D') || (arr[i][1] === ')' || arr[i][1] === 'D')){
+        numOfSmileys += 1
+      }
+    }
+  }
+  return numOfSmileys
+}
+
+
