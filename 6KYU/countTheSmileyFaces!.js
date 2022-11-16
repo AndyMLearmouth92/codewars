@@ -61,4 +61,9 @@ for(let i = 0; i < arr.length; i++){
   return numOfSmileys
 }
 
+// Solution 3:
+
+function countSmileys(arr) {
+  return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+}
 
