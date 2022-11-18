@@ -34,3 +34,7 @@ function printerError(s) {
       return s.match(/[n-zN-Z]/g).length.toString() + `/${s.length}`
   }
 }
+
+// Solution 2:
+
+const printerError = s => (s.match(/[n-zN-Z]/g) || []).length + '/' + s.length;
