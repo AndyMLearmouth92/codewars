@@ -50,3 +50,17 @@ function printerError(s) {
    }
   return numberOfErrors + '/'+s.length
 }
+
+// Solution 4:
+
+function printerError(s) {
+  let splitArray = s.split('')
+  let numberOfErrors = []
+   for(let i = 0; i < splitArray.length; i++){
+     if(splitArray[i] > 'm'){
+       numberOfErrors.push(splitArray[i])
+     }
+   }
+  return numberOfErrors.length + '/'+s.length
+}
+
