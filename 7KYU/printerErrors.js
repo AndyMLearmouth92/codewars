@@ -38,3 +38,15 @@ function printerError(s) {
 // Solution 2:
 
 const printerError = s => (s.match(/[n-zN-Z]/g) || []).length + '/' + s.length;
+
+// Solution 3:
+
+function printerError(s) {
+  let numberOfErrors = 0
+   for(let i = 0; i < s.length; i++){
+     if(s[i] > 'm'){
+       numberOfErrors += 1
+     }
+   }
+  return numberOfErrors + '/'+s.length
+}
