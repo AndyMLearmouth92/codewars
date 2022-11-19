@@ -43,3 +43,14 @@ function nbYear(p0, percent, aug, p) {
 }
   return i
 }
+
+// Solution 2:
+
+function nbYear(p0, percent, aug, p) {
+ let years = 0
+ for(let i = 0; p0 < p; i++){
+  p0 = Math.floor(p0*(1+(percent/100)) + aug)
+   years++
+ }
+  return years
+}
