@@ -29,3 +29,20 @@ const sequenceSum = (begin, end, step) => {
   return sum
 };
 
+
+// Solution 2:
+
+const sequenceSum = (begin, end, step) => {
+  let sum = begin
+  if(begin > end){
+    return 0
+  }else{
+    while (begin <= end) {
+    begin += step
+      if(begin <= end){
+         sum += begin
+      }
+    }
+  }
+  return sum
+};
