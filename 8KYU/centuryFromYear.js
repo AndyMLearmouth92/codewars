@@ -31,3 +31,6 @@ function century(year) {
 // Solution 2:
 
 const century = year => Math.ceil(year/100)
+
+
+// Solution 3:
