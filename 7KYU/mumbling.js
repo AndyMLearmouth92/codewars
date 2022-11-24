@@ -15,8 +15,19 @@ function accum(s) {
 
 */
 
-Solution 1:
+// Solution 1:
 
 function accum(s) {
   return s.toLowerCase().split('').map((x,i) => x.toUpperCase() + x.repeat(i)).join('-')
+}
+
+// Solution 2:
+
+function accum(s) {
+  let mumbling = []
+	let splitString = s.toLowerCase().split('')
+  for(let i = 0; i < splitString.length; i++){
+      mumbling.push(splitString[i].toUpperCase() + splitString[i].repeat(i))
+    }
+ return mumbling.join('-')
 }
