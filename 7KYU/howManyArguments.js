@@ -5,3 +5,7 @@
 function args_count (args){
   return arguments.length
 }
+
+// Solution 2:
+
+const args_count = (...args) => args.length
