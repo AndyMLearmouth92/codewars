@@ -18,3 +18,14 @@ function largest(n,xs){
 function largest(n,xs){
    return xs.sort((a,b) => a-b).slice(xs.length-n)
 }
+
+// Solution 2:
+
+function largest(n,xs){
+  let answer = []
+  let sorted = xs.sort((a,b) => b-a)
+  for(let i = 0; i < n; i++){
+    answer.push(sorted[i])
+  }
+  return answer.reverse()
+}
