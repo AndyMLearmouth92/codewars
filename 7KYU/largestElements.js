@@ -29,3 +29,7 @@ function largest(n,xs){
   }
   return answer.reverse()
 }
+
+// Solution 3:
+
+const largest = (n,xs) => xs.sort((a,b) => a-b).slice(xs.length-n)
