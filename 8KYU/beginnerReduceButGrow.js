@@ -13,3 +13,9 @@ function grow(x){
 // Solution 1:
 
 const grow = (x) => x.reduce((sum, current) => sum * current)
+
+// Solution 2:
+
+function grow(x){
+    return x.reduce((sum, current) => sum * current)
+  }
