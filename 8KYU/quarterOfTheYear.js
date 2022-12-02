@@ -10,7 +10,7 @@ const quarterOf = (month) => {
 }
 */
 
-Solution 1:
+// Solution 1:
 
 const quarterOf = (month) => {
   if(month <= 3){
@@ -23,3 +23,7 @@ const quarterOf = (month) => {
     return 4
   }
 }
+
+// Solution 2:
+
+const quarterOf = (month) => Math.ceil(month/3)
