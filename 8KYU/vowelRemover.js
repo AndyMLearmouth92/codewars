@@ -20,5 +20,18 @@ function shortcut (string) {
 // Solution 1:
 
 function shortcut (string) {
-    return string.replace(/[aeiou]/gi, '')
+return string.replace(/[aeiou]/gi, '')
+}
+
+// Solution 2:
+
+function shortcut (string) {
+    let vowels = 'aeiou'
+    let constanants = ''
+    for(let i = 0; i < string.length; i++){
+      if(!(vowels.includes(string[i]))){
+        constanants += string[i]
+      }
     }
+    return constanants
+  }
