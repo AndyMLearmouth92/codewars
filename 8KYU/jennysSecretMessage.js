@@ -21,3 +21,7 @@ function greet(name){
       return "Hello, " + name + "!"
     }
   }
+
+//   Solution 2:
+
+const greet = (name) => name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!"
