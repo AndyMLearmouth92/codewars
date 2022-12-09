@@ -20,4 +20,6 @@ function smash (words) {
     return words.join(' ')
  };
 
- 
+//  Solution 2:
+
+const smash = (words) => words.join(' ')
