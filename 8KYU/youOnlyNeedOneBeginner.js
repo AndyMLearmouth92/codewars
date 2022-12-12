@@ -21,3 +21,7 @@ function check(a, x) {
     return false
   }
 }
+
+// Solution 2:
+
+const check = (a, x) => a.includes(x) ? true : false
