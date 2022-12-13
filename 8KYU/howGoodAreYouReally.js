@@ -22,3 +22,8 @@ function betterThanAverage(classPoints, yourPoints) {
 function betterThanAverage(classPoints, yourPoints) {
     return yourPoints > classPoints.reduce((sum, current) => sum + current, 0) / classPoints.length
   }
+
+//   Solution 2:
+
+const betterThanAverage = (classPoints, yourPoints) => yourPoints > classPoints.reduce((sum, current) => sum + current, 0) / classPoints.length
+  
