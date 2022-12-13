@@ -26,4 +26,15 @@ function betterThanAverage(classPoints, yourPoints) {
 //   Solution 2:
 
 const betterThanAverage = (classPoints, yourPoints) => yourPoints > classPoints.reduce((sum, current) => sum + current, 0) / classPoints.length
+
+// Solution 3:
+
+function betterThanAverage(classPoints, yourPoints) {
+    let averageStudent = classPoints.reduce((sum, current) => sum + current, 0) / classPoints.length
+    if(yourPoints >= averageStudent){
+      return true
+    }else{
+      return false
+    }
+  }
   
