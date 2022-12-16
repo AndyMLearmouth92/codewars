@@ -25,3 +25,16 @@ function maxMultiple(divisor, bound){
 
 const maxMultiple = (divisor, bound) => bound-bound%divisor
 
+// Solution 2:
+
+function maxMultiple(divisor, bound){
+  let total = 0
+  while (total <= bound) {
+  total += divisor
+    if(total > bound){
+      total -= divisor
+      break
+     }   
+   }
+  return total
+  }
