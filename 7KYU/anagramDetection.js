@@ -25,3 +25,16 @@ var isAnagram = function(test, original) {
   let originalSorted = original.toLowerCase().split('').sort()
   return testSorted.join('') == originalSorted.join('') ? true : false
 };
+
+
+// Solution 2:
+
+var isAnagram = function(test, original) {
+  let testSorted = test.toLowerCase().split('').sort()
+  let originalSorted = original.toLowerCase().split('').sort()
+  if(testSorted.join('') == originalSorted.join('')){
+    return true
+  }else{
+    return false
+  }
+};
