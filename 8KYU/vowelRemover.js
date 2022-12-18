@@ -35,3 +35,16 @@ function shortcut (string) {
     }
     return constanants
   }
+
+//   Solution 3:
+
+function shortcut (string) {
+    let vowels = 'aeiou'
+    let constanants = ''
+    for(let i = 0; i < string.length; i++){
+      if(!(vowels.indexOf(string[i]) > -1)){
+        constanants += string[i]
+      }
+    }
+    return constanants
+  }
