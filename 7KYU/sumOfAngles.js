@@ -11,3 +11,9 @@ function angle(n) {
 // Solution 1:
 
 const angle = (n) => ((n-2)*180)
+
+// Solution 2:
+
+function angle(n) {
+    return ((n-2)*180)
+  }
