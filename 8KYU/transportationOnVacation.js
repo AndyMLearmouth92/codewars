@@ -25,3 +25,7 @@ function rentalCarCost(d) {
       return days*40
     }
   }
+
+//   Solution 2:
+
+const rentalCarCost = (days) => days > 6 ? (days*40)-50 : days > 2 ? (days*40)-20 : days*40
