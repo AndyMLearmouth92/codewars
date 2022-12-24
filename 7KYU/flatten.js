@@ -17,3 +17,7 @@ var flatten = function (array){
 var flatten = function (array){
     return array.flat()
   }
+
+  //Solution 2:
+
+  var flatten = array => array.flat()
