@@ -24,3 +24,8 @@ function greet (name, owner) {
     }
   }
   
+//   Solution 2:
+
+function greet (name, owner) {
+    return name == owner ? 'Hello boss' : 'Hello guest'
+   }
