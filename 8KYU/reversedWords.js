@@ -17,3 +17,7 @@ function reverseWords(str){
   function reverseWords(str){
     return str.split(' ').reverse().join(' ')
   }
+
+//   Solution 2:
+
+const reverseWords = (str) => str.split(' ').reverse().join(' ')
