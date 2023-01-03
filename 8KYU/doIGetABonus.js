@@ -18,4 +18,8 @@ function bonusTime(salary, bonus) {
 
 function bonusTime(salary, bonus) {
     return bonus == true ? `£${salary*10}` : `£${salary}`
-    }
+}
+
+// Solution 2:
+
+const bonusTime = (salary, bonus) => bonus == true ? `£${salary*10}` : `£${salary}`
