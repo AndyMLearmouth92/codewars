@@ -31,7 +31,11 @@ Starter code:
 //write your code here 
 */
 
-// Solution:
+// Solution 1:
 
 for (key in questions)
   questions[key].usersAnswer = null;
+
+// Solution 2:
+
+questions.forEach(x => x.usersAnswer = null);
