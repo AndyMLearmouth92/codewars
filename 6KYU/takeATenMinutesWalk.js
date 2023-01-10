@@ -23,3 +23,13 @@ function isValidWalk(walk) {
     }
   }
 
+//   Solution 2:
+
+function isValidWalk(walk) {
+    let north = walk.filter(e => e == 'n').length
+    let east = walk.filter(e => e == 'e').length
+    let south = walk.filter(e => e == 's').length
+    let west = walk.filter(e => e == 'w').length
+    return walk.length == 10 && north == south && east == west
+   }
+
