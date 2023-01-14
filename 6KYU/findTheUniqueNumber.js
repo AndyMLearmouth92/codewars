@@ -24,3 +24,11 @@ function findUniq(arr) {
 function findUniq(arr) {
     return Number(arr.filter(e => arr.indexOf(e) === arr.lastIndexOf(e)))
   }
+
+// Solution 2:
+
+function findUniq(arr) {
+    let sortedArr = arr.sort((a,b) => a-b)
+    return sortedArr[0] === sortedArr[1] ? sortedArr.pop() : sortedArr[0]
+  }
+
