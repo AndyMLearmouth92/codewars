@@ -14,7 +14,7 @@ var uniqueInOrder=function(iterable){
 
 */
 
-// Solution:
+// Solution 1:
 
 var uniqueInOrder=function(iterable){
     let uniqueInOrder = []
@@ -24,4 +24,10 @@ var uniqueInOrder=function(iterable){
       }
     }
     return uniqueInOrder
+  }
+
+//   Solution 2:
+
+var uniqueInOrder=function(iterable){
+    return [...iterable].filter((e,i) => e !== iterable[i-1])
   }
