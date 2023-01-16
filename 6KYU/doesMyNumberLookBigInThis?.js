@@ -32,3 +32,11 @@ function narcissistic(value) {
       return false
     }
   }
+
+//   Solution 2:
+
+function narcissistic(value) {
+    let valueArr = value.toString().split('')
+    return valueArr.map(e => Math.pow((e), valueArr.length)).reduce((sum,current) => sum + current, 0) == value ? true : false
+  }
+
