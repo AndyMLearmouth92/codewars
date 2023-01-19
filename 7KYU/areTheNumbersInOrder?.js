@@ -38,4 +38,9 @@ function inAscOrder(arr) {
       }
      return true
    }
-   
+
+//    Solution 2:
+
+function inAscOrder(arr) {
+    return arr.join('') == arr.sort((a,b) => a-b).join('')
+  }
