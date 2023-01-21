@@ -31,3 +31,22 @@ function findOutlier(integers){
     let sort = integers.map(e => e % 2 == 0 ? even.push(e) : odd.push(e))
     return even.length == 1 ? Number(even) : Number(odd)
   }
+
+//   Solution 3:
+
+function findOutlier(integers){
+    let odd = []
+    let even = []
+    for(let i = 0; i < integers.length; i++){
+      if(integers[i] % 2 == 0){
+        even.push(integers[i])
+      }else{
+        odd.push(integers[i])
+      }
+    }
+    if(odd.length < even.length){
+     return Number(odd)
+    }else{
+      return Number(even)
+    }
+  }
