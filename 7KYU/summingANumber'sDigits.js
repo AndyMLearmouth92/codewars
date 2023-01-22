@@ -20,3 +20,13 @@ function sumDigits(number) {
     return Math.abs(number).toString().split('').reduce((sum, current) => Number(sum) + Number(current), 0)
   }
 
+// Solution 2:
+
+function sumDigits(number) {
+    let splitNum = Math.abs(number).toString().split('')
+    let sum = 0
+    for(let i = 0; i < splitNum.length; i++){
+      sum += Number(splitNum[i])
+    }
+    return sum
+  }
