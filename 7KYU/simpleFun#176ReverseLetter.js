@@ -28,3 +28,7 @@ function reverseLetter(str) {
 function reverseLetter(str) {
     return str.replace(/['`~!@#$%^&*()_|+-=?;:'",.<>\{\}\[\]\\\/ ]/gi, "").split('').reverse().join('')
   }
+
+//   Solution 2:
+
+const reverseLetter = (str) => str.replace(/[^a-z]/gi,'').split('').reverse().join('')
