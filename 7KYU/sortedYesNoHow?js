@@ -18,3 +18,16 @@ function isSortedAndHow(array) {
     return original == array.sort((a,b)=> a-b).join('') ? "yes, ascending" : 
     original == array.sort((a,b)=> b-a).join('') ? "yes, descending" : "no" 
    }
+
+// Solution 2:
+
+function isSortedAndHow(array) {
+    let original = array.join('')
+    if(original == array.sort((a,b)=> a-b).join('')){
+      return "yes, ascending"
+    }else if(original == array.sort((a,b)=> b-a).join('')){
+      return "yes, descending"
+    }else{
+      return "no"
+    }
+   }
