@@ -14,8 +14,25 @@ function rowWeights(array){
   }
   */
 
+//   Solution 1:
+
   function rowWeights(array){
     let team1 = array.filter((e,i) => i % 2 !== 0).reduce((sum, current) => sum + current, 0)
     let team2 = array.filter((e,i) => i % 2 === 0).reduce((sum, current) => sum + current, 0)
+    return [team2, team1]
+  }
+
+//   Solution 2:
+
+  function rowWeights(array){
+    let team1 = 0
+    let team2 = 0
+    for(let i = 0; i<array.length; i++){
+      if(i % 2 !== 0){
+        team1 += array[i]
+      }else{
+        team2 += array[i]
+      }
+    }
     return [team2, team1]
   }
