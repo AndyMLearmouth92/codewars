@@ -22,3 +22,12 @@ function sumOfMinimums(arr) {
 function sumOfMinimums(arr) {
   return arr.reduce((sum, current) => sum + Math.min(...current), 0)
 }
+
+// Solution 2:
+function sumOfMinimums(arr) {
+    let minimum = []
+    for(let i = 0; i < arr.length; i++){
+      minimum.push(Math.min(...arr[i]))
+      }
+     return minimum.reduce((sum, current) => sum + current, 0)
+   }
