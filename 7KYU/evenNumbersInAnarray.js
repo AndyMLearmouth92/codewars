@@ -19,3 +19,8 @@ function evenNumbers(array, number) {
 function evenNumbers(array, number) {
     return array.filter(e => e % 2 == 0).slice(-number)
   }
+
+// Solution 2:
+
+const evenNumbers = (array, number) => array.filter(e => e % 2 == 0).slice(-number)
+
