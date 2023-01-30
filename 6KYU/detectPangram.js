@@ -15,3 +15,13 @@ function isPangram(string){
     return(string.toLowerCase().match(regex).length == 26);
     }
 
+// Solution 2:
+
+function isPangram(string){
+    string = string.toLowerCase();
+    return "abcdefghijklmnopqrstuvwxyz".toLowerCase().split("").every(function(x){
+      return string.indexOf(x) !== -1;
+    });
+  }
+
+
