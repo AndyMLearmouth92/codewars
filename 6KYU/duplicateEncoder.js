@@ -23,3 +23,18 @@ function duplicateEncode(word){
     let lCWord = word.toLowerCase()
     return lCWord.split('').map(e => lCWord.indexOf(e) !== lCWord.lastIndexOf(e) ? ')' : '(').join('')
   }
+
+//   Solution 2:
+
+function duplicateEncode(word){
+    let result = []
+    let lCWord = word.toLowerCase()
+      for (var i=0; i<lCWord.length; i++) {
+        if (lCWord.indexOf(lCWord[i]) !== lCWord.lastIndexOf(lCWord[i])) {
+         result.push(')');
+        }else{
+         result.push('(')
+        }
+      }
+    return result.join('')
+  }
