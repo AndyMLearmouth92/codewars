@@ -23,3 +23,7 @@ function removeDuplicateWords (s) {
     let arrayWords = s.split(' ')
     return [...new Set(arrayWords)].join(' ')
   }
+
+// Solution 2:
+
+const removeDuplicateWords = (s) => [...new Set(s.split(' '))].join(' ')
