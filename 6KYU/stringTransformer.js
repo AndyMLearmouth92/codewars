@@ -20,4 +20,12 @@ function stringTransformer(str) {
 
 function stringTransformer(str) {
     return str.split('').map(e => e === e.toUpperCase() ? e.toLowerCase() : e.toUpperCase()).join('').split(' ').reverse().join(' ')
-   }
+}
+
+// Solution 2:
+
+function stringTransformer(str) {
+    let reversedCase = str.split('').map(e => e === e.toUpperCase() ? e.toLowerCase() : e.toUpperCase()).join('')
+    let reversedWord = reversedCase.split(' ').reverse().join(' ')
+    return reversedWord
+  }
