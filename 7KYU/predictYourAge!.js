@@ -27,3 +27,14 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
     let arrayAges = [age1,age2,age3,age4,age5,age6,age7,age8]
     return Math.floor(Math.sqrt(arrayAges.map(e => e * e).reduce((sum, current) => sum + current, 0)) / 2)
   }
+
+// Solution 2
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+    let arrayAges = [age1,age2,age3,age4,age5,age6,age7,age8]
+    let count = 0
+    for(let i = 0; i< arrayAges.length; i++){
+      count += arrayAges[i] * arrayAges[i]
+    }
+    return Math.floor(Math.sqrt(count) / 2)
+  }
