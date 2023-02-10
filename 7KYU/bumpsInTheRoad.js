@@ -16,3 +16,15 @@ const bump = (x) => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
 // Solution 2:
 
 const bump = (x) => x.split('').filter(e => e == 'n').length > 15 ? 'Car Dead' : 'Woohoo!'
+
+// Solution 3:
+
+function bump(x){
+    let array = x.split('')
+    let count = 0
+    for(let i = 0; i < array.length; i++){
+      if(array[i] == 'n')
+        count ++
+      }
+    return count > 15 ? 'Car Dead' : 'Woohoo!'
+    }
