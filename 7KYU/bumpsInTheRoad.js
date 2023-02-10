@@ -12,3 +12,7 @@ function bump(x){
 // Solution 1:
 
 const bump = (x) => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
+
+// Solution 2:
+
+const bump = (x) => x.split('').filter(e => e == 'n').length > 15 ? 'Car Dead' : 'Woohoo!'
