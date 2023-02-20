@@ -24,4 +24,16 @@ function explode(s) {
 
 function explode(s) {
     return s.split('').map(e => e.repeat(e)).join('')
+}
+
+// Solution 2:
+
+function explode(s) {
+    let splitInput = s.split('')
+    let explodedDigits = ''
+    for(let i = 0; i < splitInput.length; i++){
+      explodedDigits += splitInput[i].repeat(splitInput[i])
+    }
+      return explodedDigits
   }
+
