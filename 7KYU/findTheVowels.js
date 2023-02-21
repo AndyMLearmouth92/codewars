@@ -20,6 +20,9 @@ function vowelIndices(word){
 }
 */
 
+// Solution 1:
+
+
 function vowelIndices(word){
     vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
     result = []
@@ -29,4 +32,16 @@ function vowelIndices(word){
       }
     }
     return result;
+  }
+
+//   Solution 2:
+
+function vowelIndices(word) {
+    let arr = [];
+    for(let i = 0; i < word.length; i++) {
+      if(/[aeioyu]/i.test(word[i])) {
+        arr.push(i+1);
+      }
+    }
+    return arr;
   }
