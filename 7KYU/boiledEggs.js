@@ -29,3 +29,7 @@ function cookingTime(eggs) {
 function cookingTime(eggs) {
     return Math.ceil(eggs/8)*5
   }
+
+// Solution 2:
+
+const cookingTime = (eggs) => Math.ceil(eggs/8)*5
