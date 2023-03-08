@@ -18,3 +18,7 @@ function mygcd(x,y){
     }
     return mygcd(y,x%y)
   }
+
+// Solution 2:
+
+const mygcd = (x,y) => !y ? x : mygcd(y, x%y)
