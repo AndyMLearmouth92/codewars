@@ -17,4 +17,18 @@ function divCon(x){
     return number.reduce((sum, current) => sum + current, 0) - string.reduce((sum, current) => Number(sum) + Number(current), 0)
     }
 
-    
+// Solution 2:
+
+function divCon(x){
+    let string = []
+    let number = []
+    for(let i = 0; i < x.length; i++){
+      if(typeof(x[i]) == 'string'){
+        string.push(x[i])
+      }else{
+        number.push(x[i])
+      }
+    }
+     return number.reduce((sum, current) => sum + current, 0) - string.reduce((sum, current) => Number(sum) + Number(current), 0)
+   }
+
