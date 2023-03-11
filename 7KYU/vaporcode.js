@@ -21,3 +21,9 @@ function vaporcode(string) {
 function vaporcode(string) {
     return string.split('').filter(e => e !== ' ').join('  ').toUpperCase()
   }
+
+// Solution 2:
+
+function vaporcode(string) {
+    return string.replace(/\s/g, '').split('').join('  ').toUpperCase()
+  }
