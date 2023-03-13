@@ -28,3 +28,13 @@ function averages(numbers) {
       }
       return arrayOfAverages
     }
+
+    // Solution 2:
+
+    function averages(numbers) {
+        if(numbers){
+          return numbers.map((e,i,arr) => (e + arr[i+1]) /2).slice(0,-1)
+          }else{
+            return []
+          }
+        }
