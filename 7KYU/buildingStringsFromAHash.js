@@ -18,3 +18,13 @@ function solution(pairs){
 function solution(pairs){
     return Object.keys(pairs).map(function(value){return value + " = " + pairs[value];}).join(',')
   }
+
+// Solution 2:
+
+function solution(pairs){
+    let array = []
+    for(let pair in pairs){
+      array.push((pair+ ' = ' +pairs[pair]))
+    }
+    return array.join(',')
+  }
