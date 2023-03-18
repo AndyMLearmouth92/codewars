@@ -28,3 +28,9 @@ function NameMe(first, last) {
     this.firstName = first;
     this.lastName = last;
     this.name = first + ' ' + last};
+
+// Solution 2:
+
+function NameMe(first, last) {
+    return {name: first + ' ' + last, firstName: first, lastName: last};
+}
