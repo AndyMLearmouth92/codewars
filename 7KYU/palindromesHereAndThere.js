@@ -19,3 +19,18 @@ function convertPalindromes(numbers) {
 function convertPalindromes(numbers) {
     return numbers.map(e => e.toString().split('').reverse().join('') == e ? 1: 0)
   };
+
+// Solution 2:
+
+function convertPalindromes(numbers) {
+    let onesAndZerosResult = []
+    for(let i = 0; i < numbers.length; i++){
+      if(numbers[i] == numbers[i].toString().split('').reverse().join('')){
+        onesAndZerosResult.push(1)
+      }
+      else{
+        onesAndZerosResult.push(0)
+      }
+     }
+     return onesAndZerosResult
+    };
