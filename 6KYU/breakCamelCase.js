@@ -34,3 +34,10 @@ function solution(string) {
     }
     return brokenCamelCase
   }
+
+//   Solution 3:
+
+function solution(string) {
+    return(string.replace(/([A-Z])/g, ' $1'));
+  }
+
