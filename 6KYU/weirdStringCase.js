@@ -34,3 +34,14 @@ function toWeirdCase(string){
       }
       return weirdStringCase;
     };
+
+// Solution 2:
+
+function toWeirdCase(string){
+    let weirdStringCase = []
+    let input = string.split(' ')
+    for(let i = 0; i < input.length; i++){
+      weirdStringCase.push(input[i].split('').map((e,i) => i % 2 == 0 ? e.toUpperCase() : e).join('') + ' ')
+    }
+      return weirdStringCase.join('').slice(0, -1)
+    }
