@@ -30,3 +30,10 @@ function generateHashtag (str) {
       return '#'+input.join('')
     }
   }
+
+//   Solution 2:
+
+function generateHashtag (str) {
+    let input = str.split(' ').map(e => e.charAt(0).toUpperCase()+e.slice(1)).join('').split('')
+    return input.length == '' || input.length > 139 ? false : '#'+input.join('')
+  }
