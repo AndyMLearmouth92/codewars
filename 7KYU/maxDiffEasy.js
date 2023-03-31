@@ -18,3 +18,15 @@ function maxDiff(list) {
 function maxDiff(list) {
     return list.length > 1 ? Math.max(...list) - Math.min(...list) : 0
    };
+
+// Solution 2:
+
+function maxDiff(list) {
+    if(list.length <= 1){
+      return 0
+    }else{
+      let sorted = list.sort((a,b) => a-b)
+      return sorted.slice(-1) - sorted[0]
+    }
+  };
+
