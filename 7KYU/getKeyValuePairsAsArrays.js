@@ -19,3 +19,7 @@ function keysAndValues(data){
     let values = Object.values(data)
     return [keys,values]
   }
+
+//   Solution 2:
+
+const keysAndValues = data => [Object.keys(data), Object.values(data)]
