@@ -28,3 +28,14 @@ function keepOrder(ary, val) {
 function keepOrder(ary, val) {
     return ary.filter(e => e < val).length
   }
+
+// Solution 2:
+
+function keepOrder(ary, val) {
+    for(var i = 0; i < ary.length; i++){
+      if(val <= ary[i]){
+        break
+        }
+    }
+    return i
+  }
