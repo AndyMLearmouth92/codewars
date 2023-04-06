@@ -29,9 +29,22 @@ function inArray(array1,array2){
 }
 */
 
-// Solution:
+// Solution 1:
 
 function inArray(array1,array2){
     return array1.filter(e => array2.join(' ').includes(e)).sort();
   }
 
+// Solution 2:
+
+function inArray(array1,array2){
+    let result = []
+    for(let i = 0; i < array1.length; i++){
+      for(let j = 0; j < array2.length; j++){
+        if(array2[j].includes(array1[i])){
+          result.push(array1[i])
+        }
+      }
+    }
+    return [...new Set(result)].sort()
+  }
