@@ -24,4 +24,14 @@ function findDeletedNumber(arr, mixArr) {
     return reducedArr-sortedReducedMixArr
   }
 
-  
+//   Solution 2:
+
+function findDeletedNumber(arr, mixArr) {
+    let sortedArr = mixArr.sort((a,b) => a-b)
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] !== sortedArr[i]){
+        return arr[i]
+      } 
+      }
+    return 0
+  }
