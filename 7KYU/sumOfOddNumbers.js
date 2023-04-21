@@ -19,8 +19,19 @@ function rowSumOddNumbers(n) {
 
 */
 
-// Solution:
+// Solution 1:
 
 function rowSumOddNumbers(n) {
 	return Math.pow(n,3)
 }
+
+// Solution 2:
+
+function rowSumOddNumbers(n) {
+    let startNum = n*(n-1)+1
+      let rowArr = [startNum]
+    for(let i = 0; i < n -1; i++){
+      rowArr.push(rowArr[i]+2)
+    }
+    return rowArr.reduce((sum, current) => sum + current)
+  }
