@@ -19,4 +19,14 @@ var circleArea = function(radius) {
 
 var circleArea = function(radius) {
     return radius > 0 ? Number((Math.PI * radius * radius).toFixed(2)) : false
+}
+
+// Solution 2:
+
+var circleArea = function(radius) {
+    if(radius > 0){
+      return Number((Math.PI * radius * radius).toFixed(2))
+    }else{
+      return false
     }
+  };
