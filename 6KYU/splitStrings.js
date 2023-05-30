@@ -17,3 +17,18 @@ function solution(str){
 function solution(s){
     return (s+"_").match(/.{2}/g)||[]
  }
+
+//  Solution 2:
+
+ function solution(str){
+    let result = []
+    let input = str.split('')
+    for(let i = 0; i < input.length; i += 2){
+      if(input[i+1]){
+        result.push(input[i]+input[i+1])
+      }else{
+        result.push(input[i]+'_')
+      }
+    }
+    return result
+  }
