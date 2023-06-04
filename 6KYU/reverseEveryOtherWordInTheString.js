@@ -14,3 +14,9 @@ function reverse(str){
     }
     return arr.join(" ").trim(); 
   }
+
+//   Solution 2:
+
+  function reverse(str){
+    return str.split(' ').map((e,i) => i % 2 !== 0 ? e.split('').reverse().join('') : e).join(' ').trim()
+  }
