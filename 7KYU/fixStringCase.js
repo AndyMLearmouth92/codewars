@@ -22,3 +22,18 @@ function solve(s){
     let down=s.split('').filter(e=>e.match(/[a-z]/)).length
     return down>=up?s.toLowerCase():s.toUpperCase();
 }
+
+// Solution 2:
+
+function solve(s){
+    let upperCase = 0
+    let lowerCase = 0
+    for(let i = 0; i < s.length; i++){
+      if(s[i] === s[i].toUpperCase()){
+        upperCase++
+      }else{
+        lowerCase++
+      }
+    }
+    return lowerCase >= upperCase ? s.toLowerCase() : s.toUpperCase()
+  }
