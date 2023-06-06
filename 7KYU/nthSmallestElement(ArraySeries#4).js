@@ -27,3 +27,6 @@ function nthSmallest(arr, pos){
     return arr.sort((a,b) => a-b)[pos-1]
   }
 
+// Solution 2:
+
+const nthSmallest = (arr, pos) => arr.sort((a,b) => a-b)[pos-1]
