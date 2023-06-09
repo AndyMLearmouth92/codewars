@@ -25,3 +25,10 @@ function validPhoneNumber(phoneNumber){
     }
     return false
   }
+
+// Solution 2:
+
+function validPhoneNumber(phoneNumber){
+    let regex = /^(\(...\))\s(...)-(....)$/;
+    return regex.test(phoneNumber);
+  }
