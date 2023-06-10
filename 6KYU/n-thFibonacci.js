@@ -29,3 +29,19 @@ function nthFibo(n) {
     }
     return b;
   }
+
+// Solution 2:
+
+function nthFibo(n) {
+    let a = 0, b = 1, f = 1;
+    if(n === b){
+      return 0
+     }else{
+       for(let i = 2; i < n; i++) {
+          f = a + b;
+          a = b;
+          b = f;
+      }
+     }
+      return f;
+  };
