@@ -29,3 +29,7 @@ function getSumOfDigits(integer) {
     }
     return sum
   }
+
+// Solution 2:
+
+const getSumOfDigits = (integer) => String(integer).split('').reduce((sum, current) => Number(sum) + Number(current), 0)
