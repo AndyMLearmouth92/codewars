@@ -22,3 +22,29 @@ function squares(x, n) {
   }
   return result
 }
+
+// Solution 2:
+
+function squares(x, n) {
+    var result = []
+    if(n < 1){
+      return []
+    }else if(n === 1){
+      return [x]
+    }else{
+      let i = 0
+      while (i < n) {
+        if(i < 1){
+          var currentNum = x
+          result.push(currentNum)
+          i++
+        }
+        if(i >= 1){
+          currentNum = currentNum * currentNum
+          result.push(currentNum)
+          i++
+        }
+    }
+   }
+  return result
+  }
