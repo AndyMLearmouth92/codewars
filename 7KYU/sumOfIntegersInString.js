@@ -15,3 +15,9 @@ function sumOfIntegersInString(s){
     let nums = s.split(/([^0-9])/g).map(e => parseInt(e)).filter(Boolean)
     return nums.reduce((sum, current) => sum + current, 0)
   }
+
+// Solution 2:
+
+function sumOfIntegersInString(s) {
+    return (s.match(/\d+/g) || []).reduce((s, c) => s + +c, 0);
+  }
