@@ -22,3 +22,14 @@ function myLanguages(results) {
 const myLanguages = (results) => {
     return Object.keys(results).filter(e => results[e] >= 60).sort((a,b) => results[b]-results[a])
   }
+
+// Solution 2:
+
+function myLanguages(results) {
+    let result = []
+    for (const subject in results) {
+      if(results[subject] >= 60)
+        result.push(subject)
+    }
+    return result.sort((a, b) => results[b] - results[a]);
+  }
