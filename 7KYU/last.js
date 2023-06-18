@@ -14,10 +14,17 @@ function last(list){
 }
 */
 
-// Solution:
+// Solution 1:
 
 function last(list) {
     let lastArgument = arguments[arguments.length-1];
     let lastElement = list[list.length-1];
     return arguments.length > 1 ? lastArgument : lastElement || lastArgument;
+  }
+
+// Solution 2:
+
+function last(list){
+    let last = arguments[arguments.length - 1];
+    return last[last.length - 1] || last;
   }
