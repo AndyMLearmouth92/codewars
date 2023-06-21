@@ -30,4 +30,13 @@ function cleanString(s) {
     return result.join('')
   }
 
-  
+//   Solution 2:
+
+  function cleanString(string) {
+    let result = []
+    for(let char of string){
+      if(char === '#') result.pop()
+      else if(char) result.push(char)
+    }
+    return result.join('')
+  }
