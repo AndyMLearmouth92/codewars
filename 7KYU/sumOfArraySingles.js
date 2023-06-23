@@ -24,3 +24,15 @@ function repeats(arr){
 function repeats(arr){
     return arr.filter((e => arr.indexOf(e) === arr.lastIndexOf(e))).reduce((sum, current) => sum + current, 0)
   };
+
+// Solution 2:
+
+function repeats(arr){
+    let sum = 0
+    for(let i = 0; i < arr.length; i++){
+      if(arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])){
+        sum += arr[i]
+      }
+    }
+    return sum
+  };
