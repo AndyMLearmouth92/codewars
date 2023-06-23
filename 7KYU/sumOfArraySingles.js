@@ -36,3 +36,22 @@ function repeats(arr){
     }
     return sum
   };
+
+//   Solution 3:
+
+  function repeats(arr){
+    let arrSingles = []
+    for (let i = 0; i < arr.length; i++) {
+      let count = 0;
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[i] == arr[j]) {
+          count++;
+        }
+      }
+      
+      if (count == 1) {
+        arrSingles.push(arr[i]);
+      }
+    }
+   return arrSingles.reduce((sum, current) => sum + current, 0)
+  };
