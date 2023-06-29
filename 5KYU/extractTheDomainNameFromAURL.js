@@ -19,3 +19,14 @@ function domainName(url){
       .replace('www.', '')
       .split('.')[0]
   }
+
+//   Solution 2:
+
+function domainName(url){
+    let prefixRemoved = url.replace('http://', '').replace('https://', '').split('.')
+    if(prefixRemoved[0] === 'www'){
+      return prefixRemoved[1]
+    }else{
+      return prefixRemoved[0]
+    }
+  }
