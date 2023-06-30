@@ -1,0 +1,16 @@
+/* Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+Return your answer as a number.
+
+Starter code:
+
+function sumMix(x){
+
+}
+*/
+
+// Solution 1:
+
+function sumMix(x){
+    return x.reduce((sum, current) => Number(sum) + Number(current), 0)
+  }
