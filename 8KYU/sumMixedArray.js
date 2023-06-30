@@ -34,3 +34,12 @@ function sumMix(x){
      })
       return sum
 }
+
+// Solution 4:
+
+function sumMix(x){
+    let nums = x.map(i => {
+    return Number(i);
+  });
+   return nums.reduce((sum, current) => sum + current, 0)
+  }
