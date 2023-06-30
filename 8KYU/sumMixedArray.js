@@ -24,3 +24,13 @@ function sumMix(x){
   }
     return sum
   }
+
+// Solution 3:
+
+function sumMix(x){
+    let sum = 0
+    x.forEach(item => {
+      sum += Number(item)
+     })
+      return sum
+}
