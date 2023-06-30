@@ -26,3 +26,13 @@ function getAverage(marks){
     }
    return Math.floor(total / marks.length)
   }
+
+//   Solution 3:
+
+function getAverage(marks){
+    let total = 0
+    marks.forEach(item => {
+      total += item
+    })
+    return Math.floor(total / marks.length)
+  }
