@@ -21,3 +21,14 @@ function solve(arr) {
     let removeDupes = arr.map(e => [... new Set(e)])
     return removeDupes.reduce((sum, current) => sum * current.length, 1)
   };
+
+// Solution 2:
+
+function solve(arr) {
+    let combinations = 1
+    let removeDupes = arr.map(e => [... new Set(e)])
+    for(let i = 0; i < removeDupes.length; i++){
+      combinations *= removeDupes[i].length
+    }
+    return combinations
+  };
