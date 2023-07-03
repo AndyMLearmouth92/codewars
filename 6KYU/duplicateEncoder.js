@@ -38,3 +38,18 @@ function duplicateEncode(word){
       }
     return result.join('')
   }
+
+// Solution 3:
+
+function duplicateEncode(word){
+  let result = []
+  let input = word.toLowerCase()
+  for(let char of input){
+    if(input.indexOf(char) === input.lastIndexOf(char)){
+      result.push('(')
+    }else{
+      result.push(')')
+    }
+   }
+   return result.join('')
+}
