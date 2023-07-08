@@ -9,3 +9,13 @@ function reverseWord(word){
     }
     console.log(reversedWord)
 }
+
+// Solution 2:
+
+function reverseWord(word){
+    let reversedWord = ''
+    for(let i = 0; i < word.length; i++){
+       reversedWord = word[i] + reversedWord
+    }
+    console.log(reversedWord)
+}
