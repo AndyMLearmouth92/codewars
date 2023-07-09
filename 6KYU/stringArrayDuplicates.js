@@ -22,3 +22,7 @@ function dup(s) {
 function dup(s) {
     return s.map(e => e.replace(/(.)\1+/g,'$1'))
   };
+
+// Solution 2:
+
+const dup = (s) => s.join(' ').split('').filter((e,i,arr) => arr[i] !== arr[i+1]).join('').split(' ')
