@@ -26,3 +26,16 @@ function dup(s) {
 // Solution 2:
 
 const dup = (s) => s.join(' ').split('').filter((e,i,arr) => arr[i] !== arr[i+1]).join('').split(' ')
+
+// Solution 3:
+
+function dup(array) {
+    let result = []
+    let input = array.join(' ').split('')
+    for(let i = 0; i < input.length; i++){
+      if(input[i] !== input[i+1]){
+        result.push(input[i])
+      }
+    }
+    return result.join('').split(' ')
+  };
