@@ -24,3 +24,14 @@ function averageLength(x) {
     let average = Math.round(x.reduce((sum, current) => sum + current.length, 0)/x.length)
     return x.map(element => element[0].repeat(average))
   }
+
+// Solution 2:
+
+function averageLength(x) { 
+    let count = 0
+    for(let i = 0; i < x.length; i++){
+      count += x[i].length
+    }
+    let average = Math.round(count/x.length)
+    return x.map(e => e.charAt(0).repeat(average))
+  }
