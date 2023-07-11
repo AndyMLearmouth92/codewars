@@ -42,3 +42,10 @@ const gimme = function (arr) {
    }
   }
 )};
+
+// Solution 3:
+
+function gimme (triplet) {
+  let middleValue = [...triplet].sort((a,b) => a-b)[1]
+  return triplet.indexOf(middleValue)
+}
