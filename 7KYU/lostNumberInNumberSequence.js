@@ -19,9 +19,9 @@ function findDeletedNumber(arr, mixArr) {
 // Solution 1:
 
 function findDeletedNumber(arr, mixArr) {
-    let sortedReducedMixArr = mixArr.reduce((sum, current) => sum + current, 0)
+    let reducedMixArr = mixArr.reduce((sum, current) => sum + current, 0)
     let reducedArr = arr.reduce((sum, current) => sum + current, 0)
-    return reducedArr-sortedReducedMixArr
+    return reducedArr-reducedMixArr
   }
 
 //   Solution 2:
@@ -35,3 +35,7 @@ function findDeletedNumber(arr, mixArr) {
       }
     return 0
   }
+
+// Solution 3:
+
+const findDeletedNumber = (arr, mixArr) => arr.find(e => mixArr.indexOf(e) === -1) || 0
