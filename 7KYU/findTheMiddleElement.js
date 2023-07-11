@@ -19,7 +19,7 @@ function gimme (triplet) {
 }
 */
 
-// Solution:
+// Solution 1:
 
 function gimme (triplet) {
     const original = [...triplet]
@@ -30,3 +30,15 @@ function gimme (triplet) {
       }
      }
     }
+
+// Solution 2:
+
+const gimme = function (arr) {
+  let max = Math.max(...arr)
+  let min = Math.min(...arr)
+  return arr.findIndex((item)  => {
+    if (item > min && item < max) {
+    return item
+   }
+  }
+)};
