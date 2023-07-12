@@ -39,3 +39,14 @@ function findDeletedNumber(arr, mixArr) {
 // Solution 3:
 
 const findDeletedNumber = (arr, mixArr) => arr.find(e => mixArr.indexOf(e) === -1) || 0
+
+// Solution 4:
+
+function findDeletedNumber(arr, mixArr) {
+  for(let i = 0; i < arr.length; i++){
+    if(!mixArr.includes(arr[i])){
+      return arr[i]
+    }
+  }
+  return 0
+}
