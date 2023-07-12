@@ -17,3 +17,20 @@ function removeConsecutiveDuplicates(string) {
 function removeConsecutiveDuplicates(string) {
     return string.split(' ').filter((e,i,arr) => arr[i] !== arr[i+1]).join(' ')
   }
+
+// Solution 2:
+
+function removeConsecutiveDuplicates(string) {
+    let input = string.split(' ')
+    let result = []
+    if(string === ''){
+      return ''
+    }else{
+      for(let i = 0; i < input.length; i++){
+        if(input[i] !== input[i+1]){
+          result.push(input[i])
+        }
+      }
+    }
+    return result.join(' ')
+  }
