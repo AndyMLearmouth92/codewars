@@ -29,3 +29,15 @@ function absentVowel(x){
       }
     }
   }
+
+//   Solution 2:
+
+function absentVowel(x){
+    let vowels = ['a','e','i','o','u']
+    for(let i = 0; i < vowels.length; i++){
+      if(!x.includes(vowels[i])){
+        return i
+      }
+    }
+  }
+
