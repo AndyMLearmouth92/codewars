@@ -29,3 +29,18 @@ function count(string) {
   }
   return result
 }
+
+// Solution 3:
+
+function count(string) {
+  let result = {}
+  for (const char in string) {
+    if(!result[string[char]]){
+      result[string[char]] = 1
+    }else{
+      result[string[char]]++
+    }
+  }
+  return result;
+}
+
