@@ -10,8 +10,22 @@ function count(string) {
   }
   */
 
-// Solution:
+// Solution 1:
 
 function count(string) {
     return string.split('').reduce((a, e) => { a[e] = a[e] ? a[e] + 1 : 1; return a }, {}); 
   }
+
+// Solution 2:
+
+function count(string) {
+  let result = {}
+  for(let i = 0; i < string.length; i++){
+    if(!result[string[i]]){
+      result[string[i]] = 1
+    }else{
+      result[string[i]]++
+    }
+  }
+  return result
+}
