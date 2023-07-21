@@ -18,3 +18,11 @@ function validatePIN (pin) {
 // Solution 1:
 
 const validatePIN = (pin) => /^(\d{4}|\d{6})$/.test(pin);
+
+// Solution 2:
+
+function validatePIN(pin) {
+  return (pin.length === 4 || pin.length === 6) && pin.match(/^[]?\d+$/)
+    ? true
+    : false;
+}
