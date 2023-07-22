@@ -39,3 +39,7 @@ function switchItUp(number){
             return 'Zero'
     }
   }
+
+//   Solution 2:
+
+  switchItUp=n=>["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][n]
