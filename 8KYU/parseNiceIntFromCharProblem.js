@@ -16,3 +16,7 @@ function getAge(inputString){
 function getAge(inputString){
     return Number(inputString[0])
   }
+
+// Solution 2:
+
+const getAge = (inputString) => parseInt(inputString)
