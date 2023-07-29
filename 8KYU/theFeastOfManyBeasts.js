@@ -18,3 +18,9 @@ function feast(beast, dish) {
     beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
   );
 }
+
+// Solution 2:
+
+const feast = (beast, dish) =>
+  beast.charAt(0) === dish.charAt(0) &&
+  beast.charAt([beast.length - 1]) === dish.charAt(dish.length - 1);
