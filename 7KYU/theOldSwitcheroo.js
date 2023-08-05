@@ -16,9 +16,15 @@ function vowel2index(str) {
 }
 */
 
-// Solution:
+// Solution 1:
 
 function vowel2index(str) {
     let vowels = 'aeiouAEIOU'
     return str.split('').map((e,i) => vowels.includes(e) ? i+1 : e).join('')
   }
+
+// Solution 2:
+
+function vowel2index(str) {
+    return str.replace(/[aeiou]/ig, (m, i) => i + 1);
+ }
