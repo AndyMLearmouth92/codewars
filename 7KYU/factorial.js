@@ -11,6 +11,8 @@ function factorial(n){
 
 */
 
+// Solution 1:
+
 const factorial = (n) => {
     let product = 1
     for(let i = 1; i <= n; i++){
@@ -18,3 +20,13 @@ const factorial = (n) => {
     }
      return product
    }
+
+// Solution 2:
+
+const factorial = n => {
+  if(n < 2){
+    return 1
+  }else{
+    return factorial((n-1)) * n
+  } 
+}
