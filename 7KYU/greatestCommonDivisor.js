@@ -22,3 +22,14 @@ function mygcd(x,y){
 // Solution 2:
 
 const mygcd = (x,y) => !y ? x : mygcd(y, x%y)
+
+// Solution 3:
+
+function mygcd(x,y){
+  while(y) {
+    let t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
