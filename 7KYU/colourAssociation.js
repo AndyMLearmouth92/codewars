@@ -22,3 +22,8 @@ function colourAssociation(array) {
   }
   return result;
 }
+
+// Solution 2:
+
+const colourAssociation = (array) =>
+  array.map(([color, meaning]) => ({ [color]: meaning }));
