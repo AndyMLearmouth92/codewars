@@ -51,3 +51,27 @@ Queue.prototype.dequeue = function () {
 Queue.prototype.size = function () {
   return this.queue.length;
 };
+
+// Solution 2:
+
+var Queue = function () {
+  this.storage = [];
+  this.head = 0;
+  this.tail = 0;
+};
+
+Queue.prototype.enqueue = function (item) {
+  this.storage[this.tail++] = item;
+};
+
+Queue.prototype.dequeue = function () {
+  if (this.size()) {
+    let toReturn = this.storage[this.head];
+    this.head++;
+    return toReturn;
+  }
+};
+
+Queue.prototype.size = function () {
+  return this.tail - this.head;
+};
