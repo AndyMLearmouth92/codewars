@@ -14,8 +14,7 @@ function smaller(nums) {
 
 // Solution 1:
 
-const smaller = (nums) =>
-  nums.map((e, i) => nums.slice(i).filter((y) => e > y).length);
+const smaller = (nums) => nums.map((e, i) => nums.slice(i).filter((y) => e > y).length);
 
 // Solution 2:
 
