@@ -12,7 +12,12 @@ function smaller(nums) {
 }
 */
 
-// Solution:
+// Solution 1:
+
+const smaller = (nums) =>
+  nums.map((e, i) => nums.slice(i).filter((y) => e > y).length);
+
+// Solution 2:
 
 function smaller(nums) {
   let result = [];
