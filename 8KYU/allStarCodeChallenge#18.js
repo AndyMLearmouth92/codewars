@@ -25,3 +25,9 @@ function strCount(str, letter){
 function strCount(str, letter) {
   return str.split(letter).length - 1;
 }
+
+// Solution 2:
+
+function strCount(str, letter) {
+  return str.split("").filter((e) => e === letter).length;
+}
