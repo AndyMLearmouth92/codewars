@@ -22,3 +22,9 @@ function twoDecimalPlaces(number) {
 function twoDecimalPlaces(number) {
     return parseInt(number * 100)/100
   }
+
+// Solution 2:
+
+function twoDecimalPlaces(number) {
+    return Number(number.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0])
+  }
