@@ -21,3 +21,18 @@ function insertDash(num) {
     let arr = String(num).split('')
     return arr.map((e,i,arr) => arr[i] % 2 !== 0 && (arr[i+1] % 2 !== 0 && i !== arr.length-1) ? e+'-' : e).join('')
  }
+
+//  Solution 3:
+
+ function insertDash(num) {
+    let arr = String(num).split('')
+    let result = []
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] % 2 !== 0 && arr[i+1] % 2 !== 0 && i !== arr.length-1){
+        result.push(arr[i],'-')
+      }else{
+        result.push(arr[i])
+      }
+    }
+    return result.join('')
+  }
