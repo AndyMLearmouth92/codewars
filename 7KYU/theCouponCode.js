@@ -24,8 +24,17 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
 // Solution 1:
 
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
-  return (
-    enteredCode === correctCode &&
-    new Date(currentDate) <= new Date(expirationDate)
-  );
+  return enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate)
+}
+
+// Solution 2:
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  let curDate = new Date(currentDate)
+  let expDate = new Date(expirationDate)
+  if(enteredCode === correctCode && curDate <= expDate){
+    return true
+  }else{
+    return false
+  }
 }
