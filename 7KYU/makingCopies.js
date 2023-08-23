@@ -24,3 +24,9 @@ function copyList(l){
 function copyList(l){
     return [...l]
   }
+
+// Solution 2:
+
+function copyList(l){
+    return l.slice()
+  }
