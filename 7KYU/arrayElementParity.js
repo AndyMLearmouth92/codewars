@@ -24,3 +24,7 @@ function solve(arr){
 // Solution 1:
 
 const solve = (arr) => [...new Set(arr)].reduce((a, c) => a + c);
+
+// Solution 2:
+
+const solve = (array) => array.find((value) => !array.includes(-value));
