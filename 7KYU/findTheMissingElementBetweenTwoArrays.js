@@ -24,3 +24,11 @@ function findMissing(arr1, arr2) {
     }
   }
 }
+
+// Solution 2:
+
+function findMissing(arr1, arr2) {
+  let sumArr1 = arr1.reduce((sum, current) => sum + current, 0);
+  let sumArr2 = arr2.reduce((sum, current) => sum + current, 0);
+  return sumArr1 - sumArr2;
+}
