@@ -35,3 +35,14 @@ function collatz(n) {
   }
   return i;
 }
+
+// Solution 2:
+
+function collatz(n) {
+  let i = 1;
+  while (n > 1) {
+    n = n % 2 === 0 ? n / 2 : n * 3 + 1;
+    i++;
+  }
+  return i;
+}
