@@ -19,3 +19,17 @@ function min(arr, toReturn) {
     ? Math.min(...arr)
     : arr.indexOf(Math.min(...arr));
 }
+
+// Solution 2:
+
+function min(arr, toReturn) {
+  let smallestValue = arr[0];
+  let smallestValueIndexPosition = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < smallestValue) {
+      smallestValue = arr[i];
+      smallestValueIndexPosition = i;
+    }
+  }
+  return toReturn === "value" ? smallestValue : smallestValueIndexPosition;
+}
