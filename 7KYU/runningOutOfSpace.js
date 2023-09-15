@@ -14,3 +14,15 @@ function spacey(array) {
   let str = "";
   return array.map((e) => (str += e));
 }
+
+// Solution 2:
+
+function spacey(array) {
+  let holdingStr = "";
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    holdingStr += array[i];
+    result.push(holdingStr);
+  }
+  return result;
+}
