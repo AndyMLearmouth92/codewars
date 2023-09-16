@@ -25,6 +25,6 @@ function sentence(List) {
 // Solution:
 
 function sentence(List) {
-  let sortedInput = List.sort((a, b) => Object.keys(a)[0] - Object.keys(b)[0]);
+  let sortedInput = List.sort((a, b) => Object.keys(a) - Object.keys(b));
   return sortedInput.map((e) => Object.values(e)).join(" ");
 }
