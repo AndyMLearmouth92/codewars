@@ -14,3 +14,9 @@ function solve(s){
 function solve(s) {
   return Math.max(...s.match(/\d+/g));
 }
+
+// Solution 2:
+
+function solve(s) {
+  return Number(s.match(/\d+/g).sort((a, b) => b - a)[0]);
+}
