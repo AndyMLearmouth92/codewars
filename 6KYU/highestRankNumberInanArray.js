@@ -49,3 +49,24 @@ function highestRank(arr) {
     Object.keys(hashmap).reduce((a, b) => (hashmap[a] > hashmap[b] ? a : b))
   );
 }
+
+// Solution 3:
+
+function highestRank(arr) {
+  let count = 0;
+  let highestCount = 0;
+  let mode = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        count++;
+      }
+    }
+    if (count > highestCount) {
+      highestCount = count;
+      mode = arr[i];
+      count = 0;
+    }
+  }
+  return mode;
+}
