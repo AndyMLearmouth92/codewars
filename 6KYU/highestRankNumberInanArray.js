@@ -37,3 +37,15 @@ function highestRank(arr) {
   }
   return maxEl;
 }
+
+// Solution 2:
+
+function highestRank(arr) {
+  const hashmap = arr.reduce((acc, val) => {
+    acc[val] = (acc[val] || 0) + 1;
+    return acc;
+  }, {});
+  return Number(
+    Object.keys(hashmap).reduce((a, b) => (hashmap[a] > hashmap[b] ? a : b))
+  );
+}
