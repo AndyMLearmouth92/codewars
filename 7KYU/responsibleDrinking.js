@@ -22,10 +22,17 @@ function hydrate(s) {
 }
 */
 
-// Solution:
+// Solution 1:
 
 function hydrate(s) {
     let sumOfDrinks = s.match(/\d+/g).reduce((sum, current) => Number(sum) + Number(current), 0);
     return sumOfDrinks > 1 ? `${sumOfDrinks} glasses of water` : `${sumOfDrinks} glass of water`;
   }
+
+// Solution 2:
+
+function hydrate(s) {
+  let sumOfDrinks = s.split(' ').filter(e => parseInt(e)).reduce((sum, current) => Number(sum) + Number(current), 0)
+  return sumOfDrinks > 1 ? `${sumOfDrinks} glasses of water` : `1 glass of water`
+}
   
