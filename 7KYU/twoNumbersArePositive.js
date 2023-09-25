@@ -23,3 +23,13 @@ function twoArePositive(a, b, c) {
 function twoArePositive(a, b, c) {
     return [a,b,c].filter(e => e > 0).length === 2
   }
+
+// Solution 2:
+
+function twoArePositive(a, b, c) {
+    if(a > 0 && b > 0 && c <=0 || a > 0 && c > 0 && b <= 0 || b > 0 && c > 0 && a <= 0){
+      return true
+    }else{
+      return false
+    }
+  }
