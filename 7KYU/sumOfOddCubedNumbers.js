@@ -18,3 +18,17 @@ function cubeOdd(arr) {
   arr = arr.reduce((sum, current) => sum + Math.pow(current, 3), 0);
   return isNaN(arr) ? undefined : arr;
 }
+
+// Solution 2:
+
+function cubeOdd(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== "number") {
+      return undefined;
+    } else if (arr[i] % 2 !== 0) {
+      count += Math.pow(arr[i], 3);
+    }
+  }
+  return count;
+}
