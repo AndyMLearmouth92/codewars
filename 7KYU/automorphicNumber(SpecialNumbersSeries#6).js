@@ -11,3 +11,10 @@ function automorphic(n){
 
 const automorphic = (n) =>
   String(n * n).endsWith(n) ? "Automorphic" : "Not!!";
+
+// Solution 2:
+
+function automorphic(n) {
+  let square = n * n;
+  return square.toString().includes(n) ? "Automorphic" : "Not!!";
+}
