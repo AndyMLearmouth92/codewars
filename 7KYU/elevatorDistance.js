@@ -28,3 +28,17 @@ function elevatorDistance(array) {
   }
   return floorCount;
 }
+
+// Solution 2:
+
+function elevatorDistance(array) {
+  let floorCount = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > array[i - 1]) {
+      floorCount += array[i] - array[i - 1];
+    } else if (array[i] < array[i - 1]) {
+      floorCount -= array[i] - array[i - 1];
+    }
+  }
+  return floorCount;
+}
