@@ -19,3 +19,14 @@ function meeting(x) {
   let indexPos = x.indexOf("O");
   return indexPos === -1 ? "None available!" : indexPos;
 }
+
+// Solution 2:
+
+function meeting(x) {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === "O") {
+      return i;
+    }
+  }
+  return "None available!";
+}
