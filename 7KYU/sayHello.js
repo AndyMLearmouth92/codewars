@@ -20,3 +20,13 @@ function greet(name) {
 function greet(name) {
   return name ? `hello ${name}!` : null;
 }
+
+// Solution 2:
+
+function greet(name) {
+  if (!name) {
+    return null;
+  } else {
+    return `hello ${name}!`;
+  }
+}
