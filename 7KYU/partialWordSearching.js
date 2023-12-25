@@ -23,3 +23,15 @@ function wordSearch(query, seq) {
   );
   return matches.length === 0 ? ["Empty"] : matches;
 }
+
+// Solution 2:
+
+function wordSearch(query, seq) {
+  let result = [];
+  for (let i = 0; i < seq.length; i++) {
+    if (seq[i].toLowerCase().includes(query.toLowerCase())) {
+      result.push(seq[i]);
+    }
+  }
+  return result.length === 0 ? ["Empty"] : result;
+}
