@@ -37,3 +37,19 @@ function outed(meet, boss) {
     Object.keys(meet).length;
   return happiness <= 5 ? "Get Out Now!" : "Nice Work Champ!";
 }
+
+// Solution 3:
+
+function outed(meet, boss) {
+  let happiness = 0;
+  for (const key in meet) {
+    if (key === boss) {
+      happiness += meet[key] * 2;
+    } else {
+      happiness += meet[key];
+    }
+  }
+  return happiness / Object.keys(meet).length <= 5
+    ? "Get Out Now!"
+    : "Nice Work Champ!";
+}
