@@ -27,3 +27,13 @@ function outed(meet, boss) {
   let score = names.reduce((s, v) => s + meet[v], 0) + meet[boss];
   return score / names.length > 5 ? "Nice Work Champ!" : "Get Out Now!";
 }
+
+// Solution 2:
+
+function outed(meet, boss) {
+  let happiness =
+    (Object.values(meet).reduce((sum, current) => sum + current, 0) +
+      meet[boss]) /
+    Object.keys(meet).length;
+  return happiness <= 5 ? "Get Out Now!" : "Nice Work Champ!";
+}
