@@ -14,3 +14,14 @@ function missingNo(nums) {
 function missingNo(nums) {
   return 5050 - nums.reduce((sum, current) => sum + current, 0);
 }
+
+// Solution 2:
+
+function missingNo(nums) {
+  let sortedInput = nums.sort((a, b) => a - b);
+  for (let i = 0; i <= nums.length; i++) {
+    if (i !== nums[i]) {
+      return i;
+    }
+  }
+}
