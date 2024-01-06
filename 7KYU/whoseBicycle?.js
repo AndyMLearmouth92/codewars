@@ -52,3 +52,18 @@ function whoseBicycle(dairy1, dairy2, dairy3) {
 
   return `I need to buy a bicycle for my ${son[maxDiary]} son.`;
 }
+
+// Solution 2:
+
+function whoseBicycle(diary1, diary2, diary3) {
+  let son1 = Object.values(diary1).reduce((sum, current) => sum + current, 0);
+  let son2 = Object.values(diary2).reduce((sum, current) => sum + current, 0);
+  let son3 = Object.values(diary3).reduce((sum, current) => sum + current, 0);
+  if (son2 >= son1 && son2 > son3) {
+    return "I need to buy a bicycle for my second son.";
+  } else if (son3 >= son1 && son3 >= son2) {
+    return "I need to buy a bicycle for my third son.";
+  } else {
+    return "I need to buy a bicycle for my first son.";
+  }
+}
