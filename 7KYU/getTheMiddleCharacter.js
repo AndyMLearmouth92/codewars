@@ -30,3 +30,16 @@ function getMiddle(s)
 function getMiddle(s) {
   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }
+
+// Solution 2:
+
+function getMiddle(s) {
+  let position = s.length / 2;
+  for (let i = 0; i < s.length; i++) {
+    if (s.length % 2 !== 0) {
+      return s[Math.floor(position)];
+    } else {
+      return s[position - 1] + s[position];
+    }
+  }
+}
