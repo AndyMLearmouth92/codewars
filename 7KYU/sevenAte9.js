@@ -25,3 +25,7 @@ function sevenAte9(str) {
   }
   return strArray.join("");
 }
+
+// Solution 2:
+
+const sevenAte9 = (str) => str.replace(/79(?=7)/g, "7");
