@@ -13,3 +13,17 @@ function consecutive(arr, a, b) {
 
 const consecutive = (arr, a, b) =>
   Math.abs(arr.indexOf(a) - arr.indexOf(b)) === 1;
+
+// Solution 2:
+
+function consecutive(arr, a, b) {
+  for (let i = 0; i < arr.length; i++) {
+    if (
+      (arr[i] === a && arr[i + 1] === b) ||
+      (arr[i] === b && arr[i + 1] === a)
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
