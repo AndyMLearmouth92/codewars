@@ -33,3 +33,16 @@ function houseNumbersSum(inputArray) {
     .slice(0, inputArray.indexOf(0))
     .reduce((sum, current) => sum + current, 0);
 }
+
+// Solution 2:
+
+function houseNumbersSum(inputArray) {
+  let sum = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] === 0) {
+      return sum;
+    } else {
+      sum += inputArray[i];
+    }
+  }
+}
