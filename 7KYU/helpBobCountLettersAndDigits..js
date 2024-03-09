@@ -23,3 +23,18 @@ function countLettersAndDigits(input) {
   let alphaNums = input.match(/[a-z\d]/gi);
   return alphaNums !== null ? alphaNums.length : 0;
 }
+
+// Solution 2:
+
+function countLettersAndDigits(input) {
+  let letters = 0;
+  let numbers = 0;
+  for (let i = 0; i < input.length; i++) {
+    if (/[a-zA-Z]/g.test(input[i])) {
+      letters++;
+    } else if (/\d/.test(input[i])) {
+      numbers++;
+    }
+  }
+  return letters + numbers;
+}
