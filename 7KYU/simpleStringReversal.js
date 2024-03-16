@@ -21,19 +21,18 @@ function solve(str){
 
 // Solution:
 
-const solve = (s) => {
+function solve(s) {
   const spaces = [];
   for (let i = 0; i < s.length; i++) {
     if (s[i] === " ") {
       spaces.push(i);
     }
   }
-  const reversedString = s.replace(/\s/g, "").split("").reverse().join("");
-  let reversedWithSpaces = reversedString;
+  let reversedWithSpaces = s.replace(/\s/g, "").split("").reverse().join("");
   for (let i = 0; i < spaces.length; i++) {
     const pos = spaces[i];
     reversedWithSpaces =
       reversedWithSpaces.slice(0, pos) + " " + reversedWithSpaces.slice(pos);
   }
   return reversedWithSpaces;
-};
+}
