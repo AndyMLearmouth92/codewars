@@ -27,3 +27,17 @@ const consecutive = (array) => {
   const length = array.length;
   return length ? max - min - length + 1 : 0;
 };
+
+// Solution 2:
+
+const consecutive = (array) => {
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+  let count = 0;
+  for (let i = min; i < max; i++) {
+    if (!array.includes(i)) {
+      count++;
+    }
+  }
+  return count;
+};
