@@ -62,3 +62,18 @@ const minimumSteps = (numbers, value) => {
     }
   }
 };
+
+// Solution 2:
+
+const minimumSteps = (numbers, value) => {
+  const sortedArr = numbers.sort((a, b) => a - b);
+  let count = 0;
+  let i = 0;
+  while (count < value) {
+    count += sortedArr[i];
+    if (count >= value) {
+      return i;
+    }
+    i++;
+  }
+};
