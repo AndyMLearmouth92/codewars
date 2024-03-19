@@ -42,3 +42,14 @@ const minSum = (arr) => {
   }
   return count;
 };
+
+// Solution 2:
+
+const minSum = (arr) => {
+  let count = 0;
+  let sortedArray = arr.sort((a, b) => a - b);
+  while (sortedArray.length) {
+    count += sortedArray.pop() * sortedArray.shift();
+  }
+  return count;
+};
