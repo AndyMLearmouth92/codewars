@@ -70,3 +70,16 @@ const planeSeat = (a) => {
     return "No Seat!!";
   }
 };
+
+// Solution 2:
+
+const planeSeat = (a) => {
+  const letter = a[a.length - 1];
+  const num = parseInt(a);
+  if (num > 60 || letter == "I" || letter == "J") {
+    return "No Seat!!";
+  }
+  return `${num > 20 ? (num > 40 ? "Back-" : "Middle-") : "Front-"}${
+    letter > "C" ? (letter > "F" ? "Right" : "Middle") : "Left"
+  }`;
+};
