@@ -28,3 +28,22 @@ const makePassword = (phrase) => {
     .replace(/o/gi, "0")
     .replace(/s/gi, "5");
 };
+
+// Solution 2:
+
+const makePassword = (phrase) => {
+  phrase = phrase.split(" ");
+  let result = [];
+  for (let i = 0; i < phrase.length; i++) {
+    if (phrase[i][0] === "i" || phrase[i][0] === "I") {
+      result.push("1");
+    } else if (phrase[i][0] === "o" || phrase[i][0] === "O") {
+      result.push("0");
+    } else if (phrase[i][0] === "s" || phrase[i][0] === "S") {
+      result.push("5");
+    } else {
+      result.push(phrase[i][0]);
+    }
+  }
+  return result.join("");
+};
