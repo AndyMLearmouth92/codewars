@@ -25,3 +25,19 @@ const validateWord = (s) => {
   const c = s.toLowerCase();
   return c.length % new Set(c).size == 0;
 };
+
+// Solution 2:
+
+const validateWord = (s) => {
+  let charMap = {};
+  const input = s.toLowerCase().split("");
+  for (let char of input) {
+    if (!charMap[char]) {
+      charMap[char] = 1;
+    } else {
+      charMap[char]++;
+    }
+  }
+  const values = Object.values(charMap);
+  return values.every((val) => val === values[0]);
+};
