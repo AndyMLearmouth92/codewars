@@ -22,3 +22,12 @@ function stringMerge(string1, string2, letter) {
   const mergedWord = string1.substring(0, index1) + string2.substring(index2);
   return mergedWord;
 }
+
+// Solution 2:
+
+const stringMerge = (string1, string2, letter) => {
+  return (
+    string1.slice(0, string1.indexOf(letter)) +
+    string2.slice(string2.indexOf(letter))
+  );
+};
