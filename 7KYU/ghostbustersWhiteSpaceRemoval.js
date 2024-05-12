@@ -25,3 +25,10 @@ const ghostBusters = (building) => {
     ? building.replace(/\s+/g, "")
     : "You just wanted my autograph didn't you?";
 };
+
+// Solution 2:
+
+const ghostBusters = (building) =>
+  building.includes(" ")
+    ? building.split(" ").join("")
+    : "You just wanted my autograph didn't you?";
