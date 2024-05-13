@@ -17,3 +17,12 @@ function longestWord(stringOfWords) {
 
 const longestWord = (s) =>
   s.split(" ").reduceRight((a, b) => (b.length > a.length ? b : a));
+
+//   Solution 2:
+
+const longestWord = (stringOfWords) => {
+  return stringOfWords
+    .split(" ")
+    .sort((b, a) => b.length - a.length)
+    .pop();
+};
