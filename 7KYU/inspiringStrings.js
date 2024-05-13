@@ -26,3 +26,16 @@ const longestWord = (stringOfWords) => {
     .sort((b, a) => b.length - a.length)
     .pop();
 };
+
+// Solution 3:
+
+const longestWord = (stringOfWords) => {
+  const words = stringOfWords.split(" ");
+  let longestWord = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+  return longestWord;
+};
