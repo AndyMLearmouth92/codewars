@@ -16,3 +16,9 @@ function isItLetter(character) {
   }
   return false;
 }
+
+// Solution 2:
+
+function isItLetter(character) {
+  return character.toUpperCase() !== character.toLowerCase();
+}
