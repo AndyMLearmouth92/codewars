@@ -18,7 +18,14 @@ function findNextSquare(sq) {
 }
 */
 
-// Solution:
+// Solution 1:
+
+const findNextSquare = (sq) => {
+  let root = Math.sqrt(sq);
+  return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
+};
+
+// Solution 2:
 
 const findNextSquare = (sq) => {
   if (Math.sqrt(sq) % 1 === 0) {
